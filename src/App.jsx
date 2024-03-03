@@ -8,6 +8,7 @@ import './output.css'
 function App() {
   return (
     <>
+      {/* Cambiar por el componente que quieras cargar */}
       <SignInPage />
     </>
   );
