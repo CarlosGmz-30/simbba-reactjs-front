@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Button, Label, TextInput, ToggleSwitch } from "flowbite-react";
+import '../assets/styles/Background.css'
+import '../assets/styles/SignInPage.css'
 
 function SignInPage() {
     const [switch1, setSwitch1] = useState(false);
     return (
         <>
+            {/* Contenedor de objetos del background */}
             <div className="ripple-background">
                 <div className="circle xxlarge shade1"></div>
                 <div className="circle xlarge shade2"></div>
@@ -34,6 +37,7 @@ function SignInPage() {
                 ></div>
             </div>
 
+            {/* Contenedor general */}
             <div id="form-container">
                 <div id="form-background">
                     <form
@@ -44,7 +48,7 @@ function SignInPage() {
                         <h1 id="title">Inicia sesión en SIBBAI</h1>
                         <div>
                             <div className="mb-2 block">
-                                    <Label className="formLabel" htmlFor="email1" value="Correo Electrónico:" />
+                                <Label className="formLabel" htmlFor="email1" value="Correo Electrónico:" style={{ color: 'white' }} />
                             </div>
                             <TextInput
                                 className="inputForm"
@@ -57,7 +61,7 @@ function SignInPage() {
                         </div>
                         <div>
                             <div className="mb-2 block">
-                                <Label className="formLabel" htmlFor="password1" value="Contraseña:" />
+                                <Label className="formLabel" htmlFor="password1" value="Contraseña:" style={{ color: 'white' }} />
                             </div>
                             <TextInput
                                 className="inputForm"
@@ -89,4 +93,4 @@ function SignInPage() {
     );
 }
 
-export default SignInPage;
+export default SignInPage;  
