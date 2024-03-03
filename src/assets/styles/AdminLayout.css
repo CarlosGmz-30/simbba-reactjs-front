@@ -1,0 +1,95 @@
+/* Estilos generales */
+body {
+  display: flex;
+  margin: 0; /* Elimina el margen predeterminado del body */
+}
+
+.sidebar,
+.side-bar {
+  background-color: #002e60;
+  color: white;
+}
+
+/* Estilos para los ítems de la barra lateral */
+.side-bar {
+  display: flex; /* Utilizar flexbox */
+  flex-direction: column; /* Alinear los elementos en columna */
+  align-items: center; /* Centrar los elementos horizontalmente */
+  flex: 1;
+}
+
+.h-full {
+  height: 100vh; /* Establecer la altura igual a la altura de la ventana del navegador */
+  background-color: #002e60; /* Color de fondo azul */
+  color: white; /* Color de texto blanco */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cambiar el orden de los elementos */
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Alinear el section a la derecha */
+section {
+  order: 1; /* Cambiar el orden del section */
+  margin: 10px;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  margin: 10px;
+  border-bottom: #265e9b 3px solid;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-bottom: #265e9b 3px solid;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.info {
+  color: white;
+  font-weight: bold;
+}
+
+.item {
+  width: 250px;
+}
+
+.item:hover {
+  background-color: #032143;
+  color: white;
+}
+
+.btn-logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+#btn-logout{
+background-color: #009475;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bold;
+}
