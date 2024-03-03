@@ -44,7 +44,7 @@ function SignInPage() {
                         <h1 id="title">Inicia sesión en SIBBAI</h1>
                         <div>
                             <div className="mb-2 block">
-                                <Label className="formLabel" htmlFor="email1" value="Correo Electrónico:" />
+                                    <Label className="formLabel" htmlFor="email1" value="Correo Electrónico:" />
                             </div>
                             <TextInput
                                 className="inputForm"
