@@ -81,7 +81,7 @@ function SignInPage() {
                     </form>
                 </div>
                 <div id="logoContainer">
-                    <img id="logo" src="/images/logoSIMBBA-white.png" alt="" />
+                    <img id="logo" src="./src/images/logoSIMBBA-white.png" alt="" />
                 </div>
             </div>
 
