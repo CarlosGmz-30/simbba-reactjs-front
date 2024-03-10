@@ -1,4 +1,4 @@
-import { Button } from 'flowbite-react';
+import { Button, Alert } from 'flowbite-react';
 import styled from 'styled-components';
 import React, { useState } from 'react'
 import '../assets/styles/DashboardUser.css'
@@ -8,38 +8,111 @@ import RegisterUser from '../components/RegisterUser';
 
 const DashboardUser = () => {
     const [estado, cambiarEstado] = useState(false);
+    const [mostrarAlerta, setMostrarAlerta] = useState(false);
+    const [mostrarAlertaVacios, setMostrarAlertaVacios] = useState(false);
+
+    // Funcion para mostrar alerta de guardado
+    const mostrarAlertaGuardado = () => {
+        if (camposValidos()) {
+            setMostrarAlerta(true);
+            cambiarEstado(!estado);
+
+            setTimeout(() => {
+                setMostrarAlerta(false);
+            }, 3000);
+        } else {
+            setMostrarAlertaVacios(true);
+            setTimeout(() => {
+                setMostrarAlertaVacios(false);
+            }, 3000);
+        }
+    };
+
+    // Funcion para validar campos vacios
+    const camposValidos = () => {
+        const nombreInput = document.querySelector('#nombreInput').value;
+        const emailInput = document.querySelector('#emailInput').value;
+        const passwordInput = document.querySelector('#passwordInput').value;
+
+        if (nombreInput.trim() === '' || emailInput.trim() === '' || passwordInput.trim() === '') {
+            setMostrarAlertaVacios(true);
+
+            setTimeout(() => {
+                setMostrarAlertaVacios(false);
+            }, 3000);
+
+            return false;
+        }
+
+        return true;
+    };
+
     return (
         <>
+            {/* Alert de confirmacion de insert de datos */}
+            {mostrarAlerta && (
+                <Alert
+                    color="success"
+                    onDismiss={() => setMostrarAlerta(false)}
+                    style={{ position: 'fixed', zIndex: 100, bottom: '6%', left: '50%', padding: '20px' }}
+                >
+                    <span
+                        className="font-medium"
+                        style={{ fontSize: '16px', fontWeight: 'bold', marginRight: '10px' }}
+                    >
+                        ¡Datos guardados correctamente!
+                    </span>
+                </Alert>
+            )}
+
+            {/* Alert inserte datos validos */}
+            {mostrarAlertaVacios && (
+                <Alert
+                    color="danger"
+                    onDismiss={() => setMostrarAlertaVacios(false)}
+                    style={{ position: 'fixed', zIndex: 10000, top: '5%', left: '38%', padding: '20px', backgroundColor: 'rgba(255, 210, 210)' }}
+                >
+                    <span
+                        className="font-medium"
+                        style={{ fontSize: '16px', fontWeight: 'bold', marginRight: '10px' }}
+                    >
+                        ¡Por favor, completa todos los campos!
+                    </span>
+                </Alert>
+            )}
+
             {/* Contenedor del titulo */}
             <div className='titleContainer'>
                 <h1 id='userTitle'>
                     Dashboard User
                 </h1>
-                <Button id='addBtn' onClick={() => cambiarEstado(!estado)}>
+                <button id='addBtn' onClick={() => cambiarEstado(!estado)}>
                     <p>Agregar Usuario</p>
                     <img src={add} alt="addIcon" />
-                </Button>
+                </button>
 
                 {/* OfCanvas de registrar usuario */}
                 <RegisterUser
                     estado={estado}
                     cambiarEstado={cambiarEstado}
                 >
-                    <Formulario>
+                    <ContenedorFormulario>
                         <h1>Registrar Usuario</h1>
                         <form>
-                            <label htmlFor="">Nombre</label>
-                            <input type="text" />
-                            <label htmlFor="">Correo Electrónico</label>
-                            <input type="email" />
-                            <label htmlFor="">Contraseña</label>
-                            <input type="password" />
-
+                            <label htmlFor="">Nombre:</label>
+                            <input id='nombreInput' type="text" placeholder='Nombre' />
+                            <label htmlFor="">Correo Electrónico:</label>
+                            <input id='emailInput' type="email" placeholder='Correo Electrónico' />
+                            <label htmlFor="">Contraseña:</label>
+                            <input id='passwordInput' type="password" placeholder='Contraseña' />
                         </form>
-                    </Formulario>
+                        <ContenedorBoton>
+                            <button className='btnCancelar' onClick={() => cambiarEstado(!estado)}>Cancelar</button>
+                            <button className='btnGuardar' onClick={mostrarAlertaGuardado}>Guardar</button>
+                        </ContenedorBoton>
+                    </ContenedorFormulario>
                 </RegisterUser>
             </div>
-
 
             {/* Contenedor de la tabla */}
             <div id='tableContainer'>
@@ -115,15 +188,49 @@ const DashboardUser = () => {
 
 export default DashboardUser
 
-const Formulario = styled.div`
+const ContenedorFormulario = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
     form {
+        width: 60%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+
+        label {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #F4F9FF;
+        }
+    }
+`;
+
+const ContenedorBoton = styled.div`
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+
+    button {
+        width: 45%;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        transition: .3s ease all;
     }
 `;
