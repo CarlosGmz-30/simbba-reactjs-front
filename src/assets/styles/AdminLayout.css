@@ -1,7 +1,7 @@
-/* Estilos generales */
 body {
   display: flex;
-  margin: 0; /* Elimina el margen predeterminado del body */
+  margin: 0;
+  background-color: white;
 }
 
 .sidebar,
@@ -10,41 +10,42 @@ body {
   color: white;
 }
 
-/* Estilos para los ítems de la barra lateral */
 .side-bar {
-  display: flex; /* Utilizar flexbox */
-  flex-direction: column; /* Alinear los elementos en columna */
-  align-items: center; /* Centrar los elementos horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1;
 }
 
 .h-full {
-  height: 100vh; /* Establecer la altura igual a la altura de la ventana del navegador */
-  background-color: #002e60; /* Color de fondo azul */
-  color: white; /* Color de texto blanco */
+  height: 100vh;
+  background-color: #002e60;
+  color: white;
   margin: 0;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 0px 10px 0px #797979;
 }
 
-/* Cambiar el orden de los elementos */
+
+
 main {
   display: flex;
   flex-grow: 1;
 }
 
-/* Alinear el section a la derecha */
 section {
-  order: 1; /* Cambiar el orden del section */
+  order: 1;
   margin: 10px;
 }
 
 .logo {
   width: auto;
   height: auto;
-  margin: 10px;
+  margin-top: 15px;
+  margin-bottom: 15%;
   border-bottom: #265e9b 3px solid;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,10 +56,11 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
-  border-bottom: #265e9b 3px solid;
-  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 30px;
   padding-top: 15px;
+  border-bottom: #265e9b 3px solid;
 }
 
 .info {
@@ -67,29 +69,34 @@ section {
 }
 
 .item {
-  width: 250px;
+  padding: 15px;
+  width: 260px;
+  transition: all 0.3s;
+  display: flex;
+  border-radius: 0%;
 }
 
 .item:hover {
   background-color: #032143;
+  color: #009475;
+  border-left: 10px solid #009475;
+  font-weight: 600;
+}
+
+
+#btn-logout {
+  background-color: #009475;
   color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  width: 210px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s;
 }
 
-.btn-logout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;
-}
-
-#btn-logout{
-background-color: #009475;
-    color: white;
-    border: none;
-    padding: 8px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 200px;
-    border-radius: 20px;
-    font-weight: bold;
+#btn-logout:hover {
+  transform: scale(1.05);
+  background-color: #a70000;
 }

@@ -42,8 +42,6 @@ const AdminLayout = () => {
                                 <Label className="info" htmlFor="email1" value="admin@utez.edu.mx" />
                             </div>
                         </div>
-
-
                     </div>
 
                     <Sidebar.Items className='side-bar'>
@@ -60,7 +58,7 @@ const AdminLayout = () => {
                         </Sidebar.ItemGroup>
                     </Sidebar.Items>
 
-                    <div  className='btn-logout'>
+                    <div style={{ justifyContent: 'center', alignContent: 'center', display: 'flex' }}>
                         <Button
                             type='submit'
                             className='button-logout'
