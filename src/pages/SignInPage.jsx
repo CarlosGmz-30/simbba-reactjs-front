@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Label, TextInput, ToggleSwitch } from "flowbite-react";
-import '../assets/styles/Background.css'
 import '../assets/styles/SignInPage.css'
+import '../assets/styles/Background.css'
 
 function SignInPage() {
     const [switch1, setSwitch1] = useState(false);

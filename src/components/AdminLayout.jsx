@@ -1,12 +1,12 @@
 import React from 'react'
 import { Avatar, Label, Button } from 'flowbite-react';
 import { Sidebar } from 'flowbite-react';
-import logo from '../images/logoSIMBBA-white.png';
-import '../assets/styles/AdminLayout.css'
+import logo from '../assets/images/logoSIMBBA-white.png';
 import { Routes, Route } from 'react-router-dom'
 import DashboardUser from '../pages/DashboardUser';
 import DashboardBoats from '../pages/DashboardBoats';
 import Historical from '../pages/Historical';
+import '../assets/styles/AdminLayout.css'
 
 const AdminLayout = () => {
     return (

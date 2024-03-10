@@ -2,8 +2,8 @@ import { Button, Alert } from 'flowbite-react';
 import styled from 'styled-components';
 import React, { useState } from 'react'
 import '../assets/styles/DashboardUser.css'
-import add from '../images/add.png'
-import borrar from '../images/borrar.png'
+import add from '../assets/images/add.png'
+import borrar from '../assets/images/borrar.png'
 import OffCanvas from '../components/OffCanvas';
 
 const DashboardUser = () => {
