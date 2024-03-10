@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import '../assets/styles/DashboardUser.css'
 import add from '../images/add.png'
 import borrar from '../images/borrar.png'
-import RegisterUser from '../components/RegisterUser';
+import OffCanvas from '../components/OffCanvas';
 
 const DashboardUser = () => {
     const [estado, cambiarEstado] = useState(false);
@@ -92,7 +92,7 @@ const DashboardUser = () => {
                 </button>
 
                 {/* OfCanvas de registrar usuario */}
-                <RegisterUser
+                <OffCanvas
                     estado={estado}
                     cambiarEstado={cambiarEstado}
                 >
@@ -111,7 +111,7 @@ const DashboardUser = () => {
                             <button className='btnGuardar' onClick={mostrarAlertaGuardado}>Guardar</button>
                         </ContenedorBoton>
                     </ContenedorFormulario>
-                </RegisterUser>
+                </OffCanvas>
             </div>
 
             {/* Contenedor de la tabla */}

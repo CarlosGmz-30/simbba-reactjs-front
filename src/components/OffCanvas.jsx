@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const RegisterUser = ({ children, estado }) => {
+const OffCanvas = ({ children, estado }) => {
     return (
         <>
             {estado &&
@@ -15,7 +15,7 @@ const RegisterUser = ({ children, estado }) => {
     )
 }
 
-export default RegisterUser
+export default OffCanvas
 
 const Overlay = styled.div`
     width: 100vw;
