@@ -3,14 +3,16 @@ import ForgetPage from './pages/ForgetPage.jsx'
 import React from 'react';
 import './output.css'
 import AdminLayout from './components/AdminLayout.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
   return (
-    <>
-      {/* Cambiar por el componente que quieras cargar */}
-      <AdminLayout />
-    </>
+    <React.Fragment>
+      <BrowserRouter>
+        <AdminLayout />
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 

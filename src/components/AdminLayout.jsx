@@ -1,31 +1,21 @@
 import React from 'react'
 import { Avatar, Label, Button } from 'flowbite-react';
 import { Sidebar } from 'flowbite-react';
-import {
-    HiArrowSmRight,
-    HiChartPie,
-    HiInbox,
-    HiOutlineMinusSm,
-    HiOutlinePlusSm,
-    HiShoppingBag,
-    HiTable,
-    HiUser,
-} from 'react-icons/hi';
-import { twMerge } from 'tailwind-merge';
 import logo from '../images/logoSIMBBA-white.png';
 import '../assets/styles/AdminLayout.css'
-
+import { Routes, Route } from 'react-router-dom'
+import DashboardUser from '../pages/DashboardUser';
+import DashboardBoats from '../pages/DashboardBoats';
+import Historical from '../pages/Historical';
 
 const AdminLayout = () => {
     return (
         <>
             <main>
                 <Sidebar aria-label="Sidebar with multi-level dropdown example" className='sidebar bg-blue-600'>
-
                     <header className='logo'>
                         <img src={logo} alt="Logo" className="w-24 h-auto" width='100px' />
                     </header>
-
                     <div className='profile'>
                         <Avatar
                             src="https://avatars.dicebear.com/api/avataaars/1.svg"
@@ -33,7 +23,6 @@ const AdminLayout = () => {
                             rounded
                             size='xl'
                         />
-
                         <div className='profile-info'>
                             <div>
                                 <Label className="info" htmlFor="email1" value="Administrador" />
@@ -43,7 +32,6 @@ const AdminLayout = () => {
                             </div>
                         </div>
                     </div>
-
                     <Sidebar.Items className='side-bar'>
                         <Sidebar.ItemGroup >
                             <Sidebar.Item href="#" className='side-bar item'>
@@ -57,7 +45,6 @@ const AdminLayout = () => {
                             </Sidebar.Item>
                         </Sidebar.ItemGroup>
                     </Sidebar.Items>
-
                     <div style={{ justifyContent: 'center', alignContent: 'center', display: 'flex' }}>
                         <Button
                             type='submit'
@@ -68,9 +55,12 @@ const AdminLayout = () => {
                         </Button>
                     </div>
                 </Sidebar>
-
-                <section>
-                    hola
+                <section style={{ width: '100%', marginTop: 60, marginBottom: 60, marginLeft: 100, marginRight: 100 }}>
+                    <Routes>
+                        <Route path="/" element={<DashboardUser />} />
+                        <Route path="/" element={<DashboardBoats />} />
+                        <Route path="/" element={<Historical />} />
+                    </Routes>
                 </section>
             </main>
         </>
