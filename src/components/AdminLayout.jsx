@@ -7,6 +7,8 @@ import DashboardUser from '../pages/DashboardUser';
 import DashboardBoats from '../pages/DashboardBoats';
 import Historical from '../pages/Historical';
 import '../assets/styles/AdminLayout.css'
+import { Link, Outlet } from "react-router-dom";
+
 
 const AdminLayout = () => {
     return (
@@ -34,15 +36,21 @@ const AdminLayout = () => {
                     </div>
                     <Sidebar.Items className='side-bar'>
                         <Sidebar.ItemGroup >
-                            <Sidebar.Item href="#" className='side-bar item'>
-                                Ver Usuarios
-                            </Sidebar.Item>
-                            <Sidebar.Item href="#" className='side-bar item'>
-                                Ver Botes
-                            </Sidebar.Item>
-                            <Sidebar.Item href="#" className='side-bar item'>
-                                Histórico
-                            </Sidebar.Item>
+                            <li>
+                                <Link to={"users"} className='side-bar item'>
+                                    Ver Usuarios
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={"boats"} className='side-bar item'>
+                                    Ver Botes
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={"historical"} className='side-bar item'>
+                                    Histórico
+                                </Link>
+                            </li>
                         </Sidebar.ItemGroup>
                     </Sidebar.Items>
                     <div style={{ justifyContent: 'center', alignContent: 'center', display: 'flex' }}>
@@ -56,11 +64,7 @@ const AdminLayout = () => {
                     </div>
                 </Sidebar>
                 <section style={{ width: '100%', marginTop: 60, marginBottom: 60, marginLeft: 100, marginRight: 100 }}>
-                    <Routes>
-                        <Route path="/" element={<DashboardUser />} />
-                        <Route path="/" element={<DashboardBoats />} />
-                        <Route path="/" element={<Historical />} />
-                    </Routes>
+                    <Outlet />
                 </section>
             </main>
         </>
