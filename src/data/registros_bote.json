@@ -1,0 +1,4034 @@
+[
+    {
+        "_id": {
+            "$oid": "f7686236a7426809200056a5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T18:39:02.730349",
+        "distance": 30,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b814fa0e613ab59450d8caae"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T18:44:02.730349",
+        "distance": 37,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ae9250a3e64c297ecc6472e6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T18:49:02.730349",
+        "distance": 19,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "dcd237b327255b4f067186be"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T18:54:02.730349",
+        "distance": 16,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5fc8ee1ebee183c0283601b3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T18:59:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "72337f3cdfe56460080ca1bf"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:04:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d225439e62962a5add8f143d"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:09:02.730349",
+        "distance": 7,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "460cf85f6aec2c8787c431c3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:14:02.730349",
+        "distance": 33,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "1ee37bf16122c1a7c8aef58e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:19:02.730349",
+        "distance": 38,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "cdbf21b0d47b5036551c82bb"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:24:02.730349",
+        "distance": 32,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f92bfdc9917ccfb91f17385f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:29:02.730349",
+        "distance": 31,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "80078aa445a42da101e26ae8"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:34:02.730349",
+        "distance": 36,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "2e88076770b8adf2bee9a9cc"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:39:02.730349",
+        "distance": 14,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c7750f898e86a75982f9bf25"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:44:02.730349",
+        "distance": 59,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d99cb9f4ee8d6059fe425c92"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:49:02.730349",
+        "distance": 49,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "bf78b955ad37dca4df5fbc5e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:54:02.730349",
+        "distance": 12,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "58fa561cd8553648b673b51c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T19:59:02.730349",
+        "distance": 24,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f4830e0d25903c4ad87e6b44"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:04:02.730349",
+        "distance": 33,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5a537a0dd3d66dcc0d4f3938"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:09:02.730349",
+        "distance": 35,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "aa8e5a9f0816ddc6ed22bf9b"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:14:02.730349",
+        "distance": 4,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "384e7fb9c0dc060d25a6f370"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:19:02.730349",
+        "distance": 45,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "350ce3cc6f42b68608609c26"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:24:02.730349",
+        "distance": 59,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "e729e383fa0f899095797675"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:29:02.730349",
+        "distance": 42,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d830754402f6a9e86158fcd5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:34:02.730349",
+        "distance": 8,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0605536b39a3747d7956d9d5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:39:02.730349",
+        "distance": 27,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5fae15b51ae4f2a56d468266"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:44:02.730349",
+        "distance": 54,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "4d332ef7aa6eebea66d4434c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:49:02.730349",
+        "distance": 48,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "2baa8e196604fe671a2fbc98"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:54:02.730349",
+        "distance": 38,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "031b59777f02b39f1613c528"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T20:59:02.730349",
+        "distance": 5,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "36aae2a00080946bf00dc0b3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:04:02.730349",
+        "distance": 39,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "320e261aefcbc541ed896f98"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:09:02.730349",
+        "distance": 35,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "2ca9c4682a615f352c3203df"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:14:02.730349",
+        "distance": 13,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "6b35cac1f882da1a783d3731"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:19:02.730349",
+        "distance": 54,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "9d328de45890799f645c46d0"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:24:02.730349",
+        "distance": 6,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "4c38c1a6fa0ecddb73484932"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:29:02.730349",
+        "distance": 16,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5248d25a48870f5bc9ae9e9d"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:34:02.730349",
+        "distance": 23,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f581d3ef75629247b73c84be"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:39:02.730349",
+        "distance": 6,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "aed777f695d7ff76cc5ac404"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:44:02.730349",
+        "distance": 24,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a636c00b93ec1bae9d22d30c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:49:02.730349",
+        "distance": 58,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "2971bf919e0cd70ee6e4420e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:54:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "495a25d4cded026534b09c30"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T21:59:02.730349",
+        "distance": 27,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a794fe9e51939303e199d062"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:04:02.730349",
+        "distance": 39,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c6a780339bc834c9a62dcc69"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:09:02.730349",
+        "distance": 8,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "295eda20d73c825f350494c5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:14:02.730349",
+        "distance": 5,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d034157f07deff62e600d415"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:19:02.730349",
+        "distance": 37,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0988f0452f21ecca1ff101d3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:24:02.730349",
+        "distance": 46,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5758c168d08a368d9cd53a75"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:29:02.730349",
+        "distance": 53,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "36f1f9f1da7cb782176f9326"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:34:02.730349",
+        "distance": 58,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "636f2eccb121766caa121289"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:39:02.730349",
+        "distance": 15,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a9ca2e2d3585736b63cd68a7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:44:02.730349",
+        "distance": 31,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b8f026b2921359990725caa5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:49:02.730349",
+        "distance": 56,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ea2f2c56170fa6b49f50061f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:54:02.730349",
+        "distance": 45,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0a26e9578fa3b2806f541459"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T22:59:02.730349",
+        "distance": 31,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "4cdcb4d2a1f59fac4799d756"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:04:02.730349",
+        "distance": 6,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "1879bc52a447c1f35cdca789"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:09:02.730349",
+        "distance": 32,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "976e67fd76100c3555952ca0"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:14:02.730349",
+        "distance": 55,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c8e759b25c06d7ef8bc6d2d6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:19:02.730349",
+        "distance": 58,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "bc737886bedb3b9786f3b5b8"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:24:02.730349",
+        "distance": 8,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "693fef0e120373286c782716"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:29:02.730349",
+        "distance": 28,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "30838240de5fa27b6653ac7a"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:34:02.730349",
+        "distance": 21,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "376634dc47900ce698350748"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:39:02.730349",
+        "distance": 48,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "454c418a9edf7a8fee6bc5d7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:44:02.730349",
+        "distance": 5,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "36d4b63c5a46119a61f4f2ca"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:49:02.730349",
+        "distance": 31,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a4767b32bd9583528383b3b9"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:54:02.730349",
+        "distance": 59,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ab47c459ef59685949f31e4d"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-14T23:59:02.730349",
+        "distance": 52,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d69e4b878e28e2c28505b574"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:04:02.730349",
+        "distance": 29,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "9de2e9e65b07caec9cf0ff34"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:09:02.730349",
+        "distance": 53,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "6c7abc7eebed5e246898a6ed"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:14:02.730349",
+        "distance": 35,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "bad554c22ad377a3d4e1a801"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:19:02.730349",
+        "distance": 35,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "287e1549eb157526e78a9fa6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:24:02.730349",
+        "distance": 54,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7c200a31b02c1b6f186fd40c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:29:02.730349",
+        "distance": 42,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "898ed9b0d55189061ae89afd"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:34:02.730349",
+        "distance": 20,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3eb89558bad4e475a7ff9917"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:39:02.730349",
+        "distance": 16,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a418d7cb760afd5a9cce5b34"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:44:02.730349",
+        "distance": 37,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "62d377cd0c173d705d9f2c27"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:49:02.730349",
+        "distance": 28,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "cff931b0a5e013d5176af51f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:54:02.730349",
+        "distance": 10,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "87fc4e66d3dc8f3db2ed41fb"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T00:59:02.730349",
+        "distance": 52,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f3602e7d2fe1cc46c1a88e01"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:04:02.730349",
+        "distance": 31,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d61421bee45a4d47cb27652f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:09:02.730349",
+        "distance": 55,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d7990ec9dfc8b3226ac1b789"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:14:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "aca2496eba29b0a99c7cb050"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:19:02.730349",
+        "distance": 25,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7717222d2fbb5f3f70e7b47e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:24:02.730349",
+        "distance": 27,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "910288d9ff77aa6a0194b234"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:29:02.730349",
+        "distance": 49,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "296f99c22d2976308cd6b937"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:34:02.730349",
+        "distance": 28,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "960c6ad214cd6b293cc3493e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:39:02.730349",
+        "distance": 48,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "52a538e533b0d42502cc116b"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:44:02.730349",
+        "distance": 26,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3ae219417cc9de231c69467f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:49:02.730349",
+        "distance": 19,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "e5f6e557f01c2e7370ce1c74"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:54:02.730349",
+        "distance": 44,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ff7a9725ee062bdaf8d8f854"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T01:59:02.730349",
+        "distance": 58,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3764474225f32eb11d0a3911"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:04:02.730349",
+        "distance": 37,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ea1bd375e046454851e7b8a4"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:09:02.730349",
+        "distance": 10,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "dbc65323a5f8fed29427a137"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:14:02.730349",
+        "distance": 30,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a244af4d89aaff081983abff"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:19:02.730349",
+        "distance": 4,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "baa7b1cc89dd3256436d0095"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:24:02.730349",
+        "distance": 14,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "9ef20d5e11c3e4e45001d850"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:29:02.730349",
+        "distance": 7,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "aaf8a7d3feac48e322a647f2"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:34:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d92338cc761d5d9e6fba5672"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:39:02.730349",
+        "distance": 5,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d0a3fb2a8759212824e94346"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:44:02.730349",
+        "distance": 48,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "8b1c3f895db89b9a2f690407"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:49:02.730349",
+        "distance": 53,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "32406c495297062c0edf04ec"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:54:02.730349",
+        "distance": 25,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "2990c3155fe30f056baa950b"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T02:59:02.730349",
+        "distance": 46,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "df68c68e969a4eace6978ea5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:04:02.730349",
+        "distance": 14,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "6780ffbf78e093dc53171f95"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:09:02.730349",
+        "distance": 43,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "29fe67600af6380655f9cbb5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:14:02.730349",
+        "distance": 6,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b4527ea879462e0a27069f50"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:19:02.730349",
+        "distance": 20,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b7a6aece00be85c4d04b115b"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:24:02.730349",
+        "distance": 54,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b702b6e042a1256c249e4d51"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:29:02.730349",
+        "distance": 37,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "796e3b2aaf473bfedc79e8eb"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:34:02.730349",
+        "distance": 27,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "120740f2b4bcc069bd597ac6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:39:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "e8f0b3777bfe28695c7f348c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:44:02.730349",
+        "distance": 9,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ddd408d75e44a42c8d6238bd"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:49:02.730349",
+        "distance": 47,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c4bda369f199ee8a5745de60"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:54:02.730349",
+        "distance": 42,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "dc420ae7cb180afc96a114ee"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T03:59:02.730349",
+        "distance": 7,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7754bdf82f4f185825f86623"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:04:02.730349",
+        "distance": 36,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c948888b7a2d05b5a975a7eb"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:09:02.730349",
+        "distance": 7,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c78f14168f475548bd727829"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:14:02.730349",
+        "distance": 24,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "6e31367cd59d3c605d875bde"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:19:02.730349",
+        "distance": 14,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "6e4809945e25606b2ce5b190"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:24:02.730349",
+        "distance": 14,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7907b0ca4d7a3227fac5c850"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:29:02.730349",
+        "distance": 32,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f280733667a171f841d5e80f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:34:02.730349",
+        "distance": 8,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c024a3d958efa675c170acff"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:39:02.730349",
+        "distance": 18,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f5021bfcd0235acaa5e255ad"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:44:02.730349",
+        "distance": 39,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "24297f2d61907887f464692e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:49:02.730349",
+        "distance": 56,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "2361c7409086f6294c13fbe9"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:54:02.730349",
+        "distance": 42,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "361b3d6c9328577e2bdba3af"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T04:59:02.730349",
+        "distance": 10,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "9145de62e7f1f1d7da991085"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:04:02.730349",
+        "distance": 31,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "96a5145cca859f06bbbe9e2f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:09:02.730349",
+        "distance": 56,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "26a8b4658e36edf602b36c3a"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:14:02.730349",
+        "distance": 16,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "bd6da5c14931c5db046b2618"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:19:02.730349",
+        "distance": 24,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "417d6e7292ec7e675966e1b9"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:24:02.730349",
+        "distance": 39,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7dbe4815bdd87f88a4ee090b"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:29:02.730349",
+        "distance": 51,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "745b3a783ee5da91d297908e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:34:02.730349",
+        "distance": 47,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "48f492c6d64e850e58bcbb87"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:39:02.730349",
+        "distance": 53,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7d6f5ce87d2b7ea0771cdead"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:44:02.730349",
+        "distance": 28,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "8e4a1a5edaecb4f05410ab19"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:49:02.730349",
+        "distance": 47,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "4714c806f4301787452150eb"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:54:02.730349",
+        "distance": 6,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f4f26687a1336a24b3159940"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T05:59:02.730349",
+        "distance": 52,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "12c0e711780dc22496538a6a"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:04:02.730349",
+        "distance": 56,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "69ddf5d8da48035f6c9c1773"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:09:02.730349",
+        "distance": 12,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c7e4bd3a8edb6a1b9f1cbbcf"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:14:02.730349",
+        "distance": 14,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0dc42145b2833d281d3cf2fe"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:19:02.730349",
+        "distance": 20,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "95dc30164f2ec0fe7af18971"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:24:02.730349",
+        "distance": 56,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "8c84654625b49937ac269ec7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:29:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "66d6af2e1b1ba9db09d5d72a"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:34:02.730349",
+        "distance": 52,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "bedd632364597853f5f4d22d"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:39:02.730349",
+        "distance": 52,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "019eb3ed68af22fb4028dc97"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:44:02.730349",
+        "distance": 49,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "1148cc831eae1bdc54c59a45"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:49:02.730349",
+        "distance": 13,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "9596bd15fa5b2c6ed5722e01"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:54:02.730349",
+        "distance": 49,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "57f7d6bbb5e904ab457a3a66"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T06:59:02.730349",
+        "distance": 17,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "76b747bbf5d693730c8c63a2"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:04:02.730349",
+        "distance": 59,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "9f64538823c4eac0361030f3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:09:02.730349",
+        "distance": 19,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "daa0d71cfb103589f72767cf"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:14:02.730349",
+        "distance": 17,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f25d9a025960eb979cac16d5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:19:02.730349",
+        "distance": 21,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "fb07688611452cadf71c95f7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:24:02.730349",
+        "distance": 27,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0e12d497b2cc50e748be8ae4"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:29:02.730349",
+        "distance": 51,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ee0068ae76774393238e9c12"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:34:02.730349",
+        "distance": 56,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "85be8e3160ce694e16eb3873"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:39:02.730349",
+        "distance": 27,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "88f5fee40a7b2ea1755bc211"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:44:02.730349",
+        "distance": 44,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "39fb4340fb72513bab07749f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:49:02.730349",
+        "distance": 44,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "2e57c49e9b14e72b4dacc932"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:54:02.730349",
+        "distance": 18,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3ebe04ccc2bdcdab5b90546f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T07:59:02.730349",
+        "distance": 39,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3b1a7e7c591863cf0e4b069c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:04:02.730349",
+        "distance": 35,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "911b3221ecb5d1cc3790040d"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:09:02.730349",
+        "distance": 21,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ad76132ba1bb7ef6fa9342d7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:14:02.730349",
+        "distance": 6,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b84b75d59ac15bd3b77e6b48"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:19:02.730349",
+        "distance": 41,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d0884fb32d803c516ba4ff26"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:24:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0dc1010d22e7feb2b76d59c6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:29:02.730349",
+        "distance": 10,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ff74c2d650fbded3762ab2a6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:34:02.730349",
+        "distance": 33,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7816b077c0ffc1584e3722b5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:39:02.730349",
+        "distance": 55,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "eb7c3a54116d20c02d3a1941"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:44:02.730349",
+        "distance": 38,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "856ffa64be5476a86dfea14c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:49:02.730349",
+        "distance": 43,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "37a265106a7b094894ed101b"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:54:02.730349",
+        "distance": 50,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c946f7aba20b4159816b2e05"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T08:59:02.730349",
+        "distance": 49,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "fae08159b8d773f3d5e66ed9"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:04:02.730349",
+        "distance": 24,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "e74e3417f0d4fbb9c6e1dc16"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:09:02.730349",
+        "distance": 17,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f62dd7c65cbd8ef1fd8c911d"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:14:02.730349",
+        "distance": 14,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5133d08c2a412cee6e0f4e26"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:19:02.730349",
+        "distance": 54,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "133a42682ca758484d2bc1e6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:24:02.730349",
+        "distance": 45,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "92a2485143bdd64176cd3988"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:29:02.730349",
+        "distance": 40,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a4d6932b029d48f4cf771440"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:34:02.730349",
+        "distance": 10,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "fe9806bc87a3612d383a160f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:39:02.730349",
+        "distance": 40,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "2ec9cedb144457c7799ad739"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:44:02.730349",
+        "distance": 7,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "4bad03f50296ea609ce8b0da"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:49:02.730349",
+        "distance": 51,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "094c831614dc38e0bf969248"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:54:02.730349",
+        "distance": 31,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3f859344a359809a0bbdaec0"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T09:59:02.730349",
+        "distance": 48,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c78657f545ac2080f7f654d5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:04:02.730349",
+        "distance": 38,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "da21473bb409cd715886118d"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:09:02.730349",
+        "distance": 23,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d7789f17b046d47094db1379"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:14:02.730349",
+        "distance": 13,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f45c964609e4407d25cf2e4f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:19:02.730349",
+        "distance": 51,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0dd04d886a6f5a3996d7eda7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:24:02.730349",
+        "distance": 24,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "fe1169234b9bb08b066335e3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:29:02.730349",
+        "distance": 59,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f0f8a7b0773d71d83bfe4a56"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:34:02.730349",
+        "distance": 60,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "167619307741692c1cfe0ddf"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:39:02.730349",
+        "distance": 36,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7e659e04ba96f6ca92d38999"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:44:02.730349",
+        "distance": 22,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "14362113b352136003096db9"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:49:02.730349",
+        "distance": 10,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f2a7356f2fd122d490c4772a"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:54:02.730349",
+        "distance": 28,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a16003e8f81c4fe4c40730c6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T10:59:02.730349",
+        "distance": 49,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "6c0864ce0221167c9de7785c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:04:02.730349",
+        "distance": 31,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0c9ae2b5222e5e64f988405e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:09:02.730349",
+        "distance": 17,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "de5f2b71b9958f90c065d9f3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:14:02.730349",
+        "distance": 4,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f5cf412339b4157df4f56d1a"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:19:02.730349",
+        "distance": 40,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3e57f986e13f3cd38c554175"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:24:02.730349",
+        "distance": 6,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c8b18f376f448c81fdb60db8"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:29:02.730349",
+        "distance": 20,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "770e487cb641ca3f28e50f29"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:34:02.730349",
+        "distance": 52,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "19dc45c09c47321e8e93cc49"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:39:02.730349",
+        "distance": 12,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "cee76c503e1376ee930499fd"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:44:02.730349",
+        "distance": 35,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ed5fce1da997a2f988209477"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:49:02.730349",
+        "distance": 52,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c9175bce4009d4b6f52073da"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:54:02.730349",
+        "distance": 37,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "27a7fda14cc33a1e5694c710"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T11:59:02.730349",
+        "distance": 40,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d708227d139cd566de6cec32"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:04:02.730349",
+        "distance": 26,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "aa16a8ae2d4379433d4cba7f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:09:02.730349",
+        "distance": 31,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0e975a6d37631cec4daab4d3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:14:02.730349",
+        "distance": 41,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b7251d3d2d04d095e1c4ba1f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:19:02.730349",
+        "distance": 42,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "9ae7b0e9fd0f8f9e73ff42ac"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:24:02.730349",
+        "distance": 58,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ec67b75f1514ff4450bff782"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:29:02.730349",
+        "distance": 25,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "24a6d7bf01b7aee04836c641"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:34:02.730349",
+        "distance": 4,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "815d78f1797f0bc9064efedf"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:39:02.730349",
+        "distance": 20,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "edd2eabec3ab90c873a976d7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:44:02.730349",
+        "distance": 57,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7bee1e4a3d5b01f02f1eb1b0"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:49:02.730349",
+        "distance": 28,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a02afd13c4b0f5e68fa1a739"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:54:02.730349",
+        "distance": 55,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "fe69606a39d2be728fa02fb1"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T12:59:02.730349",
+        "distance": 33,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "45e906fd909f08b19249d632"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:04:02.730349",
+        "distance": 41,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "06c72fae27951878055ab88c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:09:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "afc58c2c1f5a0be7074f3118"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:14:02.730349",
+        "distance": 17,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "1237802f335bd317c670bc59"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:19:02.730349",
+        "distance": 8,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f7314b20b68ad4eca134d786"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:24:02.730349",
+        "distance": 35,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a6c2ed1eac1c5baf01e2965e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:29:02.730349",
+        "distance": 20,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b309eea08a79c53522801a51"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:34:02.730349",
+        "distance": 38,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "e39746ac31d3bf055fdb92bc"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:39:02.730349",
+        "distance": 10,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "57733d4a25accc5ead9b1f0f"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:44:02.730349",
+        "distance": 52,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c2bb8db01e278733888a3283"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:49:02.730349",
+        "distance": 19,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0286180a4ccde88af16ce9ca"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:54:02.730349",
+        "distance": 32,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a16e5422173f5eaf5902b5bb"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T13:59:02.730349",
+        "distance": 39,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "fff482c8ef232bf2d7b9bf7c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:04:02.730349",
+        "distance": 48,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "8479c190adc3c12cb030540b"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:09:02.730349",
+        "distance": 23,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0733dc454faef51e2444b213"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:14:02.730349",
+        "distance": 46,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "9279c1bd1ee054a19625e993"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:19:02.730349",
+        "distance": 13,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "4ad8c31fdbc40d25781301f0"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:24:02.730349",
+        "distance": 14,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "270a36091423c8eed2bb8488"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:29:02.730349",
+        "distance": 19,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5a6480848d20e6837a9c0992"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:34:02.730349",
+        "distance": 59,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "1458a80696ab3aacc4d31675"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:39:02.730349",
+        "distance": 43,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3d9effa12e22be7ddf4793dd"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:44:02.730349",
+        "distance": 53,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f41a52d1fa6516f1d5e9c4ec"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:49:02.730349",
+        "distance": 54,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "77e12df292a3f28960360da0"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:54:02.730349",
+        "distance": 9,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5cc53d6cdf46b6452f8c1368"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T14:59:02.730349",
+        "distance": 5,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "cd04b53205361ebefbeacae7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:04:02.730349",
+        "distance": 38,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b6b36209e21b5d691813724b"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:09:02.730349",
+        "distance": 45,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "9c8b363c62538a25e2685792"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:14:02.730349",
+        "distance": 18,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "03c1b8a96fed0916324cc5e8"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:19:02.730349",
+        "distance": 58,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "026c19dcc74e0666a6991ae5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:24:02.730349",
+        "distance": 38,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "c43416b711ae37471f5d6a2e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:29:02.730349",
+        "distance": 13,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ea8bd632e168b77f6d5823c1"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:34:02.730349",
+        "distance": 21,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "85d6c36c76d8bcf093c981f3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:39:02.730349",
+        "distance": 42,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "a6d1a8a0f93fb9374ae07d35"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:44:02.730349",
+        "distance": 11,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "7fa9cdadbf7e9ae15943f2df"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:49:02.730349",
+        "distance": 29,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ca967b19aae9918fea93cc99"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:54:02.730349",
+        "distance": 22,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "dc028b6c20652326628d92ba"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T15:59:02.730349",
+        "distance": 54,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "1338f4914d4cc1ba7d821420"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:04:02.730349",
+        "distance": 16,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "16068da1dcf4e10e13b9bd54"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:09:02.730349",
+        "distance": 41,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b18e00e96a3c36bb59244095"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:14:02.730349",
+        "distance": 26,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "743d57045c8d05b877e6a453"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:19:02.730349",
+        "distance": 11,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5f368c655d843d07a17e3d80"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:24:02.730349",
+        "distance": 38,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "206f8246566091d8fc4319ba"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:29:02.730349",
+        "distance": 57,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "846158f8a748a9b8d3aa67a2"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:34:02.730349",
+        "distance": 6,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "76efba93421f4b49db475738"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:39:02.730349",
+        "distance": 24,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f06290caa29b63af39de34f3"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:44:02.730349",
+        "distance": 47,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "630b79c5cf43b662d16ea67a"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:49:02.730349",
+        "distance": 26,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3a2414b9246db1b4061ae801"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:54:02.730349",
+        "distance": 33,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "0c6bc9881664fd40db9ecab5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T16:59:02.730349",
+        "distance": 32,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "89a99864d4e5507ff2724930"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:04:02.730349",
+        "distance": 34,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d9b052acd00a0a87f4f76d1d"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:09:02.730349",
+        "distance": 30,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "6b3bd35b209e91b47dca0bf8"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:14:02.730349",
+        "distance": 30,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "3683209fffff9bb86f281de9"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:19:02.730349",
+        "distance": 21,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "ad693b8c64b598da18f853e7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:24:02.730349",
+        "distance": 39,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "534b63689022faaa6a0c3a03"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:29:02.730349",
+        "distance": 60,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "fb6a2c70e0d8914092122ed4"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:34:02.730349",
+        "distance": 28,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f785044774557012dc6746d7"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:39:02.730349",
+        "distance": 35,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "2a3f6e6a1e7ed4658e4d356c"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:44:02.730349",
+        "distance": 28,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "4d0e3a52a8794ca6735da4b1"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:49:02.730349",
+        "distance": 44,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f6e4baea11711d5a06c24721"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:54:02.730349",
+        "distance": 56,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "b0b79eac9a54ff486e8db965"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T17:59:02.730349",
+        "distance": 8,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "dc97e8e35f7d9bb47305b42a"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T18:04:02.730349",
+        "distance": 9,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "64e713887a2d326405fb193e"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T18:09:02.730349",
+        "distance": 21,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "f4d256aa7628d2b286e83fa5"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T18:14:02.730349",
+        "distance": 5,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "5f2f2f6bb48b1408f49246d6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T18:19:02.730349",
+        "distance": 5,
+        "isFull": true,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "4a3511ad15b656faae6d9e40"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T18:24:02.730349",
+        "distance": 15,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "d2f8ca7389a43dd504df3123"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T18:29:02.730349",
+        "distance": 29,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    },
+    {
+        "_id": {
+            "$oid": "312d42a3709eea5aa23f56f6"
+        },
+        "_class": "mx.edu.utez.springbootmongodb.models.record.Record",
+        "dateAndTime": "2024-03-15T18:34:02.730349",
+        "distance": 56,
+        "isFull": false,
+        "location": {
+            "latitude": 0,
+            "longitude": 0
+        },
+        "serialNumber": 3
+    }
+]
