@@ -14,11 +14,13 @@
 }
 
 #mapContainerB {
-    height: 50%;
+    height: 40%;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 20px;
 }
 
 #graphicContainerB {
-    height: 50%;
+    height: 60%;
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -33,7 +35,9 @@
 #HeaderB {
     display: flex;
     align-items: center;
-    box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow: 0px 0px 5px 0px #666666;
+    position: static;
+    z-index: 1;
 }
 
 #headerTitleB {
