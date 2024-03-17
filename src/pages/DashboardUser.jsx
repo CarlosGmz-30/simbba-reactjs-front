@@ -3,7 +3,7 @@ import styled from "styled-components";
 import React, { useState } from "react";
 import "../assets/styles/DashboardUser.css";
 import add from "../assets/images/add.png";
-import borrar from "../assets/images/borrar.png";
+import borrar from "../assets/images/deleteBtn.png";
 import OffCanvas from "../components/OffCanvas";
 
 const DashboardUser = () => {

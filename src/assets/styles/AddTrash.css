@@ -1,0 +1,23 @@
+.cardContainer {
+    height: 100%;
+    width: 180px;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px #d1d1d1;
+    transition: all 0.3s ease; 
+    margin-right: 2%;
+}
+
+.cardContainer h1 {
+    margin-top: 15px;
+}
+
+.cardContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 0px #d1d1d1;
+}
