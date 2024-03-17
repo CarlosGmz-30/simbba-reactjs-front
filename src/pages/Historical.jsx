@@ -7,7 +7,7 @@ const Historical = () => {
       <div id="Header">
         <h1 id="headerTitle">Histórico</h1>
       </div>
-      <section style={{ width: "100%", height: "100%" }}>
+      <section id="sectionGeneral">
         <div id="carruselContainer">
           <h1 className="title">Selecciona un bote de basura</h1>
         </div>

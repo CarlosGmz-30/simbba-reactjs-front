@@ -1,0 +1,45 @@
+#generalContainerB {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionGeneralB {
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+}
+
+#mapContainerB {
+    height: 50%;
+}
+
+#graphicContainerB {
+    height: 50%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+.titleB {
+    font-weight: bold;
+    font-size: 32px;
+    color: #686868;
+}
+
+#HeaderB {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+
+#headerTitleB {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 40px;
+    color: #686868;
+}
