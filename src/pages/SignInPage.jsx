@@ -1,10 +1,48 @@
-import React, { useState } from "react";
-import { Button, Label, TextInput, ToggleSwitch } from "flowbite-react";
+import React, { useContext } from "react";
+import { Button, Label, TextInput, Spinner } from "flowbite-react";
 import '../assets/styles/SignInPage.css'
 import '../assets/styles/Background.css'
+import { useNavigate } from "react-router-dom";
+import * as yup from 'yup';
+import { useFormik } from 'formik';
+import AxiosClient from "../config/http-client/axios-client";
+import AuthContext from "../config/context/auth-context";
 
-function SignInPage() {
-    const [switch1, setSwitch1] = useState(false);
+const SignInPage = () => {
+    const { dispatch } = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    const formik = useFormik({
+        initialValues: {
+            mail: '',
+            password: ''
+        },
+        validationSchema: yup.object().shape({
+            mail: yup.string().required('El correo es requerido').email('El correo no es válido'),
+            password: yup.string().required('La contraseña es requerida')
+        }),
+        onSubmit: async (values, { setSubmitting }) => {
+            try {
+                const response = await AxiosClient({
+                    url: "/auth/signin",
+                    method: "POST",
+                    data: values
+                });
+                //console.log(response);
+                if (!response.error) {
+                    dispatch({ type: "SIGNIN", payload: response.data })
+                    navigate("/", { replace: true });
+                } else throw Error("Error")
+            } catch (error) {
+                console.error(error);
+            } finally {
+                setSubmitting(false);
+            }
+        }
+    });
+
+
+
     return (
         <>
             {/* Contenedor de objetos del background */}
@@ -44,6 +82,7 @@ function SignInPage() {
                         id="form"
                         className="flex max-w-md flex-col gap-4"
                         noValidate
+                        onSubmit={formik.handleSubmit}
                     >
                         <h1 id="title">Inicia sesión en SIBBAI</h1>
                         <div>
@@ -54,7 +93,14 @@ function SignInPage() {
                                 className="inputForm"
                                 id="email1"
                                 type="email"
-                                name="username"
+                                name="mail"
+                                value={formik.values.mail}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                helperText={
+                                    formik.errors.mail && formik.touched.mail ?
+                                        (<span className="text-red-500">{formik.errors.mail}</span>) : null
+                                }
                                 placeholder="Correo Electrónico"
                                 required
                             />
@@ -68,6 +114,13 @@ function SignInPage() {
                                 id="password1"
                                 type="password"
                                 name="password"
+                                value={formik.values.password}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                helperText={
+                                    formik.errors.password && formik.touched.password ?
+                                        (<span className="text-red-500">{formik.errors.password}</span>) : null
+                                }
                                 required
                                 placeholder="Contraseña"
                             />
@@ -76,10 +129,13 @@ function SignInPage() {
                             <ToggleSwitch checked={switch1} onChange={setSwitch1} />
                             <Label id="rememberText" htmlFor="remember">Recuérdame</Label>
                         </div>
-                        <Button
-                            id="button"
-                            type="submit"
-                        >Iniciar Sesión
+                        <Button id="button" type="submit" disabled={formik.isSubmitting || !formik.isValid}>
+                            {
+                                formik.isSubmitting ? (<Spinner />) : (<>
+                                   
+                                    Iniciar sesión
+                                </>)
+                            }
                         </Button>
                         <a id="forget" href="">¿Se te ha olvidado la contraseña?</a>
                     </form>
