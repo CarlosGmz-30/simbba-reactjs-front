@@ -4,7 +4,7 @@ import '../assets/styles/TrashCard.css'
 import trash from '../assets/images/trash.png'
 import edit from '../assets/images/editar.png'
 import eliminar from '../assets/images/eliminar.png'
-
+ 
 export default function TrashCard() {
     return (
         <>
