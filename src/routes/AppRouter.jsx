@@ -5,7 +5,7 @@ import DashboardBoats from '../pages/DashboardBoats'
 import DashboardUser from '../pages/DashboardUser'
 import Historical from '../pages/Historical'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
- 
+
 
 const AppRouter = () => {
     const router = createBrowserRouter(

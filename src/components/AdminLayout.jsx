@@ -2,9 +2,7 @@ import React from "react";
 import { Avatar, Label, Button } from "flowbite-react";
 import { Sidebar } from "flowbite-react";
 import logo from "../assets/images/logoSIMBBA-white.png";
-
-import "../assets/styles/AdminLayout.css"; // Esta linea es la que causa problemas con los estilos
-
+import "../assets/styles/AdminLayout.css";
 import { Link, Outlet } from "react-router-dom";
 
 const AdminLayout = () => {
