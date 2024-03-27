@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Button, Label, TextInput, Spinner } from "flowbite-react";
+import { Button, Label, TextInput, Spinner, ToggleSwitch } from "flowbite-react";
 import '../assets/styles/SignInPage.css'
 import '../assets/styles/Background.css'
 import { useNavigate } from "react-router-dom";
@@ -126,7 +126,6 @@ const SignInPage = () => {
                             />
                         </div>
                         <div id="rememberContainer" className="flex items-center gap-2">
-                            <ToggleSwitch checked={switch1} onChange={setSwitch1} />
                             <Label id="rememberText" htmlFor="remember">Recuérdame</Label>
                         </div>
                         <Button id="button" type="submit" disabled={formik.isSubmitting || !formik.isValid}>
