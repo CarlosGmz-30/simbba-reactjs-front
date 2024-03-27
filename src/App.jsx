@@ -1,16 +1,25 @@
-import SignInPage from './pages/SignInPage.jsx';
-import ForgetPage from './pages/ForgetPage.jsx'
-import React from 'react';
-import AdminLayout from './components/AdminLayout.jsx';
-import { BrowserRouter } from 'react-router-dom';
-import './output.css'
+import { useEffect, useReducer } from 'react';
+import AuthContext from './config/context/auth-context';
+import { authManager } from './config/context/auth-manager.js';
 import AppRouter from './routes/AppRouter.jsx';
+import './output.css'
 
+
+const init = () => {
+  return JSON.parse(localStorage.getItem('user')) || { signed: false };
+}
 
 function App() {
-  return (
+  const [user, dispatch] = useReducer(authManager, {}, init);
+  useEffect(() => {
+    if (!user) return;
+    localStorage.setItem('user', JSON.stringify(user))
+  }, [user]);
 
-    <AppRouter />
+  return (
+    <AuthContext.Provider value={{ user, dispatch }}>
+      <AppRouter />
+    </AuthContext.Provider>
 
   );
 }
