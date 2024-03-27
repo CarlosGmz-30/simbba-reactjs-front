@@ -5,7 +5,16 @@ import trash from '../assets/images/trash.png'
 import edit from '../assets/images/editar.png'
 import eliminar from '../assets/images/eliminar.png'
 
-export default function TrashCard() {
+export default function TrashCard({ name, level }) {
+
+    let capacity = '';
+    if (level == 0) {
+        capacity = 'VACIO'
+    } else if (level > 0 && level <= 25) {
+        capacity = 'CASI VACIO'
+
+    } 
+
     return (
         <>
             <div className='generalContainer'>
@@ -19,13 +28,16 @@ export default function TrashCard() {
                 </div>
                 <div id='cardContainer'>
                     <img src={trash} alt="" />
-                    <h1>Nombre del Bote</h1>
+                    <h1>{name}</h1>
                     <Progress
-                        style={{ width: '100%', padding: '10px'}}
-                        progress={50}
+                        style={{ width: '100%', padding: '10px' }}
+                        progress={level}
                     />
-                    <h2>Capacidad - Medio</h2>
-                    <h1>50%</h1>
+
+
+
+                    <h2>{capacity}</h2>
+                    <h1>{level}%</h1>
                 </div>
 
             </div>

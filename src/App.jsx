@@ -4,7 +4,6 @@ import { authManager } from './config/context/auth-manager.js';
 import AppRouter from './routes/AppRouter.jsx';
 import './output.css'
 
-
 const init = () => {
   return JSON.parse(localStorage.getItem('user')) || { signed: false };
 }
