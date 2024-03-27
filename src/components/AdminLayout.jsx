@@ -2,7 +2,7 @@ import React from "react";
 import { Avatar, Label, Button } from "flowbite-react";
 import { Sidebar } from "flowbite-react";
 import logo from "../assets/images/logoSIMBBA-white.png";
- import "../assets/styles/AdminLayout.css";
+import "../assets/styles/AdminLayout.css";
 import { Link, Outlet } from "react-router-dom";
 
 const AdminLayout = () => {

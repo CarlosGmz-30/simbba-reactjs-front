@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'; 
 
 const SERVER_URL = import.meta.env.VITE_APP_SERVER_URL;
 const APP_JSON = 'application/json';
