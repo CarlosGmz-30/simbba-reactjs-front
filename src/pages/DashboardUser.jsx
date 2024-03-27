@@ -1,15 +1,32 @@
-import { Button, Alert } from "flowbite-react";
+import { Button, Alert, TextInput, Spinner } from "flowbite-react";
 import styled from "styled-components";
 import React, { useState } from "react";
 import "../assets/styles/DashboardUser.css";
 import add from "../assets/images/add.png";
 import borrar from "../assets/images/deleteBtn.png";
 import OffCanvas from "../components/OffCanvas";
+import { useFormik } from 'formik';
+import * as yup from 'yup';
 
 const DashboardUser = () => {
   const [estado, cambiarEstado] = useState(false);
   const [mostrarAlerta, setMostrarAlerta] = useState(false);
   const [mostrarAlertaVacios, setMostrarAlertaVacios] = useState(false);
+
+  // Validaciones con Formik
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      password: "",
+    },
+    validationSchema: yup.object().shape({
+      name: yup.string().required("El nombre es requerido"),
+      email: yup.string().required("El correo es requerido").email("El correo no es válido"),
+      password: yup.string().required("La  contraseña es requerida")
+    }),
+  });
+
 
   // Funcion para mostrar alerta de guardado
   const mostrarAlertaGuardado = () => {
@@ -106,7 +123,7 @@ const DashboardUser = () => {
         </Alert>
       )}
 
-      <div id="generalContainer" style={{ padding: 60}}>
+      <div id="generalContainer" style={{ padding: 60 }}>
         {/* Contenedor del titulo */}
         <div className="titleContainer">
           <h1 id="userTitle">Dashboard User</h1>
@@ -121,18 +138,50 @@ const DashboardUser = () => {
               <h1>Registrar Usuario</h1>
               <form>
                 <label htmlFor="">Nombre:</label>
-                <input id="nombreInput" type="text" placeholder="Nombre" />
+                <TextInput
+                  className="inputForm"
+                  id="nombreInput"
+                  type="text"
+                  placeholder="Nombre"
+                  name="name"
+                  value={formik.values.name}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  helperText={
+                    formik.errors.name && formik.touched.name ?
+                      (<span className="text-red-500">{formik.errors.name}</span>) : null
+                  }
+                />
+
                 <label htmlFor="">Correo Electrónico:</label>
-                <input
+                <TextInput
+                  className="inputForm"
                   id="emailInput"
                   type="email"
                   placeholder="Correo Electrónico"
+                  name="email"
+                  value={formik.values.email}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  helperText={
+                    formik.errors.email && formik.touched.email ?
+                      (<span className="text-red-500">{formik.errors.email}</span>) : null
+                  }
                 />
                 <label htmlFor="">Contraseña:</label>
-                <input
+                <TextInput
+                  className="inputForm"
                   id="passwordInput"
                   type="password"
                   placeholder="Contraseña"
+                  name="password"
+                  value={formik.values.password}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  helperText={
+                    formik.errors.password && formik.touched.password ?
+                      (<span className="text-red-500">{formik.errors.password}</span>) : null
+                  }
                 />
               </form>
               <ContenedorBoton>
@@ -142,9 +191,13 @@ const DashboardUser = () => {
                 >
                   Cancelar
                 </button>
-                <button className="btnGuardar" onClick={mostrarAlertaGuardado}>
-                  Guardar
-                </button>
+                <Button className="btnGuardar" onClick={mostrarAlertaGuardado} type="submit" disabled={formik.isSubmitting || !formik.isValid}>
+                  {
+                    formik.isSubmitting ? (<Spinner />) : ( <>
+                      Guardar
+                    </>)
+                  }
+                </Button>
               </ContenedorBoton>
             </ContenedorFormulario>
           </OffCanvas>
@@ -245,10 +298,10 @@ const ContenedorFormulario = styled.div`
       font-size: 15px;
       font-weight: bold;
       margin-bottom: 5px;
+      margin-top: 20px;
     }
 
     input {
-      margin-bottom: 20px;
       border-radius: 5px;
       background-color: #f4f9ff;
     }
