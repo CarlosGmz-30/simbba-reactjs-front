@@ -33,7 +33,7 @@ const DashboardUser = () => {
     if (camposValidos()) {
       setMostrarAlerta(true);
       cambiarEstado(!estado);
-
+      formik.resetForm();
       setTimeout(() => {
         setMostrarAlerta(false);
       }, 3000);
@@ -187,13 +187,16 @@ const DashboardUser = () => {
               <ContenedorBoton>
                 <button
                   className="btnCancelar"
-                  onClick={() => cambiarEstado(!estado)}
+                  onClick={() => {
+                    cambiarEstado(!estado);
+                    formik.resetForm();
+                  }}
                 >
                   Cancelar
                 </button>
                 <Button className="btnGuardar" onClick={mostrarAlertaGuardado} type="submit" disabled={formik.isSubmitting || !formik.isValid}>
                   {
-                    formik.isSubmitting ? (<Spinner />) : ( <>
+                    formik.isSubmitting ? (<Spinner />) : (<>
                       Guardar
                     </>)
                   }
@@ -286,7 +289,6 @@ const ContenedorFormulario = styled.div`
   h1 {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
   }
 
   form {
@@ -312,7 +314,7 @@ const ContenedorBoton = styled.div`
   width: 60%;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 25px;
 
   button {
     width: 45%;
