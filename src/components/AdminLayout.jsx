@@ -3,18 +3,18 @@ import { Avatar, Label, Button } from "flowbite-react";
 import { Sidebar } from "flowbite-react";
 import logo from "../assets/images/logoSIMBBA-white.png";
 import "../assets/styles/AdminLayout.css";
-import { Link, Outlet, useNavigate } from "react-router-dom"; // Importa useNavigate
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import AuthContext from "../config/context/auth-context";
 import { confirmAlert } from "../config/alerts/alert"
 
 const AdminLayout = () => {
   const { dispatch } = useContext(AuthContext);
-  const navigate = useNavigate(); // Inicializa useNavigate
+  const navigate = useNavigate(); 
 
   const handleLogout = () => {
     confirmAlert(() => {
       dispatch({ type: "SIGNOUT" });
-      navigate("/"); // Utiliza navigate para redirigir a la página de inicio
+      navigate("/");
     });
   };
   
