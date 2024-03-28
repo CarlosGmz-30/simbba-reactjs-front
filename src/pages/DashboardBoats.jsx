@@ -23,13 +23,11 @@ const DashboardBoats = () => {
     const formik = useFormik({
         initialValues: {
             name: "",
-            email: "",
-            password: "",
+            id: "",
         },
         validationSchema: yup.object().shape({
             name: yup.string().required("El nombre es requerido"),
-            email: yup.string().required("El correo es requerido").email("El correo no es válido"),
-            password: yup.string().required("La  contraseña es requerida")
+            id: yup.string().required("La matrícula es requerida"),
         }),
     });
 
@@ -192,6 +190,13 @@ const DashboardBoats = () => {
                                 type="text"
                                 placeholder="Nombre"
                                 name="name"
+                                value={formik.values.name}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                helperText={
+                                    formik.errors.name && formik.touched.name ?
+                                        (<span className="text-red-500">{formik.errors.name}</span>) : null
+                                }
                             />
                             <label htmlFor="">ID del Bote:</label>
                             <TextInput
@@ -199,7 +204,14 @@ const DashboardBoats = () => {
                                 id="nombreInput"
                                 type="text"
                                 placeholder="ID del Bote"
-                                name="name"
+                                name="id"
+                                value={formik.values.id}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                helperText={
+                                    formik.errors.id && formik.touched.id ?
+                                        (<span className="text-red-500">{formik.errors.id}</span>) : null
+                                }
                             />
                         </form>
                         <ContenedorBoton>
@@ -216,8 +228,13 @@ const DashboardBoats = () => {
                                 className="btnGuardar"
                                 onClick={mostrarAlertaGuardado}
                                 type="submit"
+                                disabled={!formik.isValid || formik.isSubmitting}
                             >
-                                Agregar
+                                {
+                                    formik.isSubmitting ? (<Spinner />) : (<>
+                                        Guardar
+                                    </>)
+                                }
                             </Button>
                         </ContenedorBoton>
                     </ContenedorFormulario>
