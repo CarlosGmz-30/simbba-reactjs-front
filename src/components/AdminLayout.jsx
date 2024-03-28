@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Avatar, Label, Button } from "flowbite-react";
 import { Sidebar } from "flowbite-react";
 import logo from "../assets/images/logoSIMBBA-white.png";
 import "../assets/styles/AdminLayout.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom"; // Importa useNavigate
+import AuthContext from "../config/context/auth-context";
+import { confirmAlert } from "../config/alerts/alert"
 
 const AdminLayout = () => {
+  const { dispatch } = useContext(AuthContext);
+  const navigate = useNavigate(); // Inicializa useNavigate
+
+  const handleLogout = () => {
+    confirmAlert(() => {
+      dispatch({ type: "SIGNOUT" });
+      navigate("/"); // Utiliza navigate para redirigir a la página de inicio
+    });
+  };
+  
+
   return (
     <>
       <main>
@@ -66,12 +79,12 @@ const AdminLayout = () => {
               display: "flex",
             }}
           >
-            <Button type="submit" className="button-logout" id="btn-logout">
+            <Button type="submit" className="button-logout" id="btn-logout" onClick={handleLogout}>
               CERRAR SESIÓN
             </Button>
           </div>
         </Sidebar>
-        <section style={{ width: "100%", margin: '0%'}}>
+        <section style={{ width: "100%", margin: '0%' }}>
           <Outlet />
         </section>
       </main>
