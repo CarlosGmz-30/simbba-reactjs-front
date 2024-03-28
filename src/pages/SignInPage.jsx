@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Button, Label, TextInput, Spinner, ToggleSwitch } from "flowbite-react";
 import '../assets/styles/SignInPage.css'
 import '../assets/styles/Background.css'
@@ -40,6 +40,14 @@ const SignInPage = () => {
             }
         }
     });
+
+
+    //ToggleSwitch
+    const [isOn, setIsOn] = useState(false);
+
+    const handleToggle = () => {
+        setIsOn((prev) => !prev);
+    };
 
 
 
@@ -126,12 +134,21 @@ const SignInPage = () => {
                             />
                         </div>
                         <div id="rememberContainer" className="flex items-center gap-2">
+                            <ToggleSwitch
+                                checked={isOn}
+                                onChange={handleToggle}
+                                style={{
+                                    "--slider-background-color-checked": "#ffffff",
+                                    "--toggle-color-checked": "#ffffff",
+                                    "--toggle-color-unchecked": "#ffffff",
+                                }}
+                            />
                             <Label id="rememberText" htmlFor="remember">Recuérdame</Label>
                         </div>
                         <Button id="button" type="submit" disabled={formik.isSubmitting || !formik.isValid}>
                             {
                                 formik.isSubmitting ? (<Spinner />) : (<>
-                                   
+
                                     Iniciar sesión
                                 </>)
                             }
