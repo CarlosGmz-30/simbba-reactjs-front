@@ -22,6 +22,7 @@ const AppRouter = () => {
                             <Route path="/boats" element={<DashboardBoats />} />
                             <Route path="/users" element={<DashboardUser />} />
                             <Route path="/historical" element={<Historical />} />
+                            <Route path="/historical/:serialNumber" element={<Historical />} />
                         </Route>
                     </>
                 ) : (

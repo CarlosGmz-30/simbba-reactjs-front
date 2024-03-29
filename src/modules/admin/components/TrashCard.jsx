@@ -4,8 +4,9 @@ import '../styles/TrashCard.css'
 import trash from '../../../assets/images/trash.png'
 import edit from '../../../assets/images/editar.png'
 import eliminar from '../../../assets/images/eliminar.png'
+import { Link } from 'react-router-dom';
 
-export default function TrashCard({ name, level }) {
+export default function TrashCard({ name, level, serialNumber }) {
 
     let capacity = '';
     if (level == 0) {
@@ -13,34 +14,34 @@ export default function TrashCard({ name, level }) {
     } else if (level > 0 && level <= 25) {
         capacity = 'CASI VACIO'
 
-    } 
+    }
 
     return (
-        <>
-            <div className='generalContainer'>
-                <div id='containerButtons'>
-                    <button>
-                        <img className='trashBtn' src={edit} alt="" />
-                    </button>
-                    <button>
-                        <img className='trashBtn' src={eliminar} alt="" />
-                    </button>
+        <Link to={`/historical/${serialNumber}`} >
+            <>
+
+                <div className='generalContainer'>
+                    <div id='containerButtons'>
+                        <button>
+                            <img className='trashBtn' src={edit} alt="" />
+                        </button>
+                        <button>
+                            <img className='trashBtn' src={eliminar} alt="" />
+                        </button>
+                    </div>
+                    <div id='cardContainer'>
+                        <img src={trash} alt="" />
+                        <h1>{name}</h1>
+                        <Progress
+                            style={{ width: '100%', padding: '10px' }}
+                            progress={level}
+                        />
+                        <h2>{capacity}</h2>
+                        <h1>{level}%</h1>
+                    </div>
+
                 </div>
-                <div id='cardContainer'>
-                    <img src={trash} alt="" />
-                    <h1>{name}</h1>
-                    <Progress
-                        style={{ width: '100%', padding: '10px' }}
-                        progress={level}
-                    />
-
-
-
-                    <h2>{capacity}</h2>
-                    <h1>{level}%</h1>
-                </div>
-
-            </div>
-        </>
+            </>
+        </Link>
     )
 }

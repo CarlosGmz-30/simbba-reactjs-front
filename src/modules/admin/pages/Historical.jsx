@@ -50,19 +50,18 @@ const Historical = () => {
         <div id="carruselContainer">
           <h1 className="title">Selecciona un bote de basura</h1>
           <div id="cardsContainer">
-            <TrashCard />
-            <TrashCard />
-            <TrashCard />
-            <TrashCard />
-            <TrashCard />
+            
+            {trashcans && trashcans.map((trashcan, index) => (
+              <TrashCard
+                key={index}
+                name={trashcan.trashcanName}
+                level={trashcan.level}
+                serialNumber={trashcan.serialNumber}
+              />
+            ))}
+
           </div>
-          {/* {trashcans && trashcans.map((trashcan, index) => (
-            <TrashCard
-              key={index}
-              name={trashcan.trashcanName}
-              level={trashcan.level}
-            />
-          ))} */}
+
         </div>
         <div id="graphicContainer">
           <h1 className="title">Histórico del bote</h1>
