@@ -1,6 +1,6 @@
 import { Button, Label, TextInput, Spinner, ToggleSwitch } from "flowbite-react";
-import AxiosClient from "../../config/http-client/axios-client";
-import AuthContext from "../../config/context/auth-context";
+import AxiosClient from "../../../config/http-client/axios-client";
+import AuthContext from "../../../config/context/auth-context";
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from 'formik';

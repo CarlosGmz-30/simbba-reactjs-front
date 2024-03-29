@@ -1,15 +1,15 @@
-import "../assets/styles/DashboardBoats.css";
+import "../styles/DashboardBoats.css";
 import Map from '../components/Map';
 import AddTrash from '../components/AddTrash';
 import TrashCard from '../components/TrashCard';
-import AxiosClient from '../config/http-client/axios-client';
+import AxiosClient from '../../../config/http-client/axios-client';
 import React, { useState, useEffect } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 
 // Importaciones para el OffCanvas
 import styled from "styled-components";
-import OffCanvas from "../components/OffCanvas";
+import OffCanvas from "../../../components/OffCanvas";
 import { Button, Alert, TextInput, Spinner } from "flowbite-react";
 
 

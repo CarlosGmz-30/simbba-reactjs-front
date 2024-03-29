@@ -1,9 +1,9 @@
 import React from 'react'
 import { Progress } from 'flowbite-react';
-import '../assets/styles/TrashCard.css'
-import trash from '../assets/images/trash.png'
-import edit from '../assets/images/editar.png'
-import eliminar from '../assets/images/eliminar.png'
+import '../styles/TrashCard.css'
+import trash from '../../../assets/images/trash.png'
+import edit from '../../../assets/images/editar.png'
+import eliminar from '../../../assets/images/eliminar.png'
 
 export default function TrashCard({ name, level }) {
 

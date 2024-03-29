@@ -1,12 +1,13 @@
 //import { View, Text } from 'react-native'
 import { useContext } from 'react'
 import AdminLayout from '../components/AdminLayout'
-import DashboardBoats from '../pages/DashboardBoats'
-import DashboardUser from '../pages/DashboardUser'
-import Historical from '../pages/Historical'
+import DashboardBoats from '../modules/admin/pages/DashboardBoats';
+import DashboardUser from '../modules/admin/pages/DashboardUser';
+import Historical from '../modules/admin/pages/Historical';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import AuthContext from '../config/context/auth-context'
-import SignInPage from '../auth/pages/SignInPage'
+import SignInPage from '../modules/auth/pages/SignInPage'
+
 
 
 const AppRouter = () => {

@@ -1,10 +1,10 @@
 import { Button, Alert, TextInput, Spinner } from "flowbite-react";
 import styled from "styled-components";
 import React, { useState } from "react";
-import "../assets/styles/DashboardUser.css";
-import add from "../assets/images/add.png";
-import borrar from "../assets/images/deleteBtn.png";
-import OffCanvas from "../components/OffCanvas";
+import "../styles/DashboardUser.css";
+import add from "../../../assets/images/add.png";
+import borrar from "../../../assets/images/deleteBtn.png";
+import OffCanvas from "../../../components/OffCanvas";
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 

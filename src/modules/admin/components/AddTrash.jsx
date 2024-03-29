@@ -1,6 +1,6 @@
 import React from 'react';
-import addBtn from '../assets/images/addBtn.png';
-import '../assets/styles/AddTrash.css';
+import addBtn from '../../../assets/images/addBtn.png';
+import '../styles/AddTrash.css';
 
 const AddTrash = ({ abrirFormulario }) => {
     return (

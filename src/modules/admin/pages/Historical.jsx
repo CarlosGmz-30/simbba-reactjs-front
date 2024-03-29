@@ -1,4 +1,4 @@
-import "../assets/styles/Historical.css";
+import "../styles/Historical.css";
 import React from "react";
 
 const Historical = () => {
