@@ -1,12 +1,15 @@
-import React, { useContext, useState } from "react";
 import { Button, Label, TextInput, Spinner, ToggleSwitch } from "flowbite-react";
-import '../assets/styles/SignInPage.css'
-import '../assets/styles/Background.css'
+import AxiosClient from "../../config/http-client/axios-client";
+import AuthContext from "../../config/context/auth-context";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import * as yup from 'yup';
 import { useFormik } from 'formik';
-import AxiosClient from "../config/http-client/axios-client";
-import AuthContext from "../config/context/auth-context";
+import * as yup from 'yup';
+
+// Estilos de la página
+import '../styles/SignInPage.css'
+import '../styles/Background.css'
+
 
 const SignInPage = () => {
     const { dispatch } = useContext(AuthContext);
@@ -48,8 +51,6 @@ const SignInPage = () => {
     const handleToggle = () => {
         setIsOn((prev) => !prev);
     };
-
-
 
     return (
         <>

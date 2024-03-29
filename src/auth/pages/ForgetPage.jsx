@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Label, TextInput } from 'flowbite-react';
-import '../assets/styles/ForgetPage.css'
+import '../styles/ForgetPage.css'
 
 function SignInPage() {
     return (
