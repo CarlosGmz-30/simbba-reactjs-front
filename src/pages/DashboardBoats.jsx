@@ -15,9 +15,11 @@ import { Button, Alert, TextInput, Spinner } from "flowbite-react";
 
 const DashboardBoats = () => {
     const [trashcans, setTrashcans] = useState([]);
-    const [estado, cambiarEstado] = useState(false);
+
+    // Alertas
     const [mostrarAlerta, setMostrarAlerta] = useState(false);
     const [mostrarAlertaVacios, setMostrarAlertaVacios] = useState(false);
+    const [estado, cambiarEstado] = useState(false);
 
     // Validaciones con Formik
     const formik = useFormik({
@@ -31,45 +33,28 @@ const DashboardBoats = () => {
         }),
     });
 
-    // Funcion para mostrar alerta de guardado
-    const mostrarAlertaGuardado = () => {
-        if (camposValidos()) {
-            setMostrarAlerta(true);
-            formik.resetForm();
-            setTimeout(() => {
-                setMostrarAlerta(false);
-                cambiarEstado(false);
-            }, 3000);
-        } else {
-            setMostrarAlertaVacios(true);
-            setTimeout(() => {
-                setMostrarAlertaVacios(false);
-            }, 3000);
-        }
-    };
-
-    // Funcion para validar campos vacios
-    const camposValidos = () => {
+    // Funcion para mostrar alertas
+    const alerta = () => {
         const nombreInput = document.querySelector("#nombreInput").value;
-        const emailInput = document.querySelector("#emailInput").value;
-        const passwordInput = document.querySelector("#passwordInput").value;
+        const matriculaInput = document.querySelector("#matriculaInput").value;
 
         if (
             nombreInput.trim() === "" ||
-            emailInput.trim() === "" ||
-            passwordInput.trim() === ""
+            matriculaInput.trim() === ""
         ) {
             setMostrarAlertaVacios(true);
-
             setTimeout(() => {
                 setMostrarAlertaVacios(false);
             }, 3000);
-
-            return false;
+        } else {
+            setMostrarAlerta(true);
+            cambiarEstado(!estado);
+            formik.resetForm();
+            setTimeout(() => {
+                setMostrarAlerta(false);
+            }, 3000);
         }
-
-        return true;
-    };
+    }
 
     const getAllTrashcans = async () => {
         try {
@@ -96,6 +81,7 @@ const DashboardBoats = () => {
             console.log('Error: ', error);
         }
     }
+
 
     useEffect(() => {
         getAllTrashcans();
@@ -157,6 +143,8 @@ const DashboardBoats = () => {
                     </span>
                 </Alert>
             )}
+
+            {/* Contenedor general */}
             <div id="generalContainerB">
                 <div id="HeaderB">
                     <h1 id="headerTitleB">Ubicación de los botes de basura</h1>
@@ -198,10 +186,15 @@ const DashboardBoats = () => {
                                         (<span className="text-red-500">{formik.errors.name}</span>) : null
                                 }
                             />
-                            <label htmlFor="">ID del Bote:</label>
+                            <label
+                                htmlFor=""
+                                style={{ marginTop: "35px" }}
+                            >
+                                ID del Bote:
+                            </label>
                             <TextInput
                                 className="inputForm"
-                                id="nombreInput"
+                                id="matriculaInput"
                                 type="text"
                                 placeholder="ID del Bote"
                                 name="id"
@@ -226,8 +219,8 @@ const DashboardBoats = () => {
                             </button>
                             <Button
                                 className="btnGuardar"
-                                onClick={mostrarAlertaGuardado}
                                 type="submit"
+                                onClick={alerta}
                                 disabled={!formik.isValid || formik.isSubmitting}
                             >
                                 {
@@ -254,6 +247,7 @@ const ContenedorFormulario = styled.div`
   h1 {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 10px;
   }
 
   form {
@@ -279,7 +273,7 @@ const ContenedorBoton = styled.div`
   width: 60%;
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 35px;
 
   button {
     width: 45%;
