@@ -21,11 +21,11 @@ const Historical = () => {
 
       console.log(DATA);
 
-      DATA.forEach(trashcan => { 
-          console.log(`ID: ${trashcan.id}`);
-          console.log(`Serial Number: ${trashcan.serialNumber}`);
-          console.log(`Trashcan Name: ${trashcan.trashcanName}`);
-          console.log(`Level: ${trashcan.level}`);
+      DATA.forEach(trashcan => {
+        console.log(`ID: ${trashcan.id}`);
+        console.log(`Serial Number: ${trashcan.serialNumber}`);
+        console.log(`Trashcan Name: ${trashcan.trashcanName}`);
+        console.log(`Level: ${trashcan.level}`);
       });
 
 
@@ -49,13 +49,20 @@ const Historical = () => {
       <section id="sectionGeneral">
         <div id="carruselContainer">
           <h1 className="title">Selecciona un bote de basura</h1>
-          {trashcans && trashcans.map((trashcan, index) => (
+          <div id="cardsContainer">
+            <TrashCard />
+            <TrashCard />
+            <TrashCard />
+            <TrashCard />
+            <TrashCard />
+          </div>
+          {/* {trashcans && trashcans.map((trashcan, index) => (
             <TrashCard
               key={index}
               name={trashcan.trashcanName}
               level={trashcan.level}
             />
-          ))}
+          ))} */}
         </div>
         <div id="graphicContainer">
           <h1 className="title">Histórico del bote</h1>
