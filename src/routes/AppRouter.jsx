@@ -1,12 +1,13 @@
 //import { View, Text } from 'react-native'
 import { useContext } from 'react'
 import AdminLayout from '../components/AdminLayout'
-import DashboardBoats from '../pages/DashboardBoats'
-import DashboardUser from '../pages/DashboardUser'
-import Historical from '../pages/Historical'
+import DashboardBoats from '../modules/admin/pages/DashboardBoats';
+import DashboardUser from '../modules/admin/pages/DashboardUser';
+import Historical from '../modules/admin/pages/Historical';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import SignInPage from '../pages/SignInPage'
 import AuthContext from '../config/context/auth-context'
+import SignInPage from '../modules/auth/pages/SignInPage'
+
 
 
 const AppRouter = () => {
@@ -24,7 +25,7 @@ const AppRouter = () => {
                         </Route>
                     </>
                 ) : (
-                        <Route path="/" element={<SignInPage />} />
+                    <Route path="/" element={<SignInPage />} />
                 )}
                 <Route path="/*" element={<> 404  Not Found</>} />
             </>

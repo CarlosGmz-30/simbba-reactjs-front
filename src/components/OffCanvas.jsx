@@ -31,7 +31,7 @@ const Overlay = styled.div`
 
 const Contenedor = styled.div`
     width: 600px;
-    height: 480px;
+    height: 510px;
     background-color: white;
     position: relative;
     border-radius: 20px;
