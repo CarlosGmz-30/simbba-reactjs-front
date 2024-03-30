@@ -4,9 +4,14 @@ import '../styles/TrashCard.css'
 import trash from '../../../assets/images/trash.png'
 import edit from '../../../assets/images/editar.png'
 import eliminar from '../../../assets/images/eliminar.png'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-export default function TrashCard({ name, level, serialNumber }) {
+export default function TrashCard({ name, level, serialNumber, onSelect }) {
+
+    const handleClick = (event) => {
+        event.preventDefault();
+        onSelect(serialNumber);
+    }
 
     let capacity = '';
     if (level == 0) {
@@ -15,9 +20,14 @@ export default function TrashCard({ name, level, serialNumber }) {
         capacity = 'CASI VACIO'
 
     }
+    const location = useLocation();
+    //console.log(location.pathname)
 
     return (
-        <Link to={`/historical/${serialNumber}`} >
+
+
+
+        <Link to={`/historical/${serialNumber}`} onClick={handleClick}>
             <>
 
                 <div className='generalContainer'>

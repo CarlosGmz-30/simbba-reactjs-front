@@ -1,0 +1,10 @@
+.graphicCard{
+    background-color: #efefef;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 16px;
+    width: 98%;
+    height: 20rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
