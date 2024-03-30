@@ -22,7 +22,7 @@ export default function GraphicCard({ serialNumber, endpoint }) {
                 });
                 //console.log("response.data: ", response.data)
                 console.log("response: ", response);
-                const DATA = response;
+                const DATA = response.data;
                 //console.log("DATA: ", DATA);
                 if (DATA) {
                     setChartData({
