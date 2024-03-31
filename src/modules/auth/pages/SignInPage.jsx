@@ -156,7 +156,6 @@ const SignInPage = () => {
                                 </>)
                             }
                         </Button>
-                        <a id="forget" href="">¿Se te ha olvidado la contraseña?</a>
                     </form>
                 </div>
                 <div id="logoContainer">
