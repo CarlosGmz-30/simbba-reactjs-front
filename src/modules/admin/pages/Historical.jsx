@@ -87,7 +87,7 @@ const Historical = () => {
                 />
                 <GraphicCard
                   serialNumber={selectedTrashcan}
-                  endpoint="currentMonthRecords"
+                  endpoint="lastSevenDaysRecords"
                 />
               </>
             )}

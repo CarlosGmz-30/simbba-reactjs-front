@@ -25,7 +25,7 @@ export default function GraphicCard({ serialNumber, endpoint }) {
             title = "Este día"
 
             break;
-        case "currentWeekRecords":
+        case "lastSevenDaysRecords":
             title = "Últimos 7 días"
 
             break;
