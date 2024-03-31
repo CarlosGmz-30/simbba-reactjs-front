@@ -28,3 +28,18 @@ export const confirmAlert = (preConfirm) => SweetAlert.fire({
     allowOutsideClick: () => !SweetAlert.isLoading(),
     preConfirm
 });
+
+export const closeAlert = (preConfirm) => SweetAlert.fire({
+    title:"¿Desea cerrar sesión?",
+    icon: "info",
+    confirmButtonColor: "#009475",
+    confirmButtonText:"Aceptar",
+    cancelButtonColor: "#A32D2D",
+    cancelButtonText: "Cancelar",
+    reverseButtons: true,
+    backdrop: true,
+    showCancelButton: true,
+    showLoaderOnConfirm: true,
+    allowOutsideClick: () => !SweetAlert.isLoading(),
+    preConfirm
+});

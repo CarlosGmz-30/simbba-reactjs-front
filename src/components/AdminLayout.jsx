@@ -5,19 +5,19 @@ import logo from "../assets/images/logoSIMBBA-white.png";
 import "../assets/styles/AdminLayout.css";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import AuthContext from "../config/context/auth-context";
-import { confirmAlert } from "../config/alerts/alert"
+import { closeAlert } from "../config/alerts/alert"
 
 const AdminLayout = () => {
   const { dispatch } = useContext(AuthContext);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleLogout = () => {
-    confirmAlert(() => {
+    closeAlert(() => {
       dispatch({ type: "SIGNOUT" });
       navigate("/");
     });
   };
-  
+
 
   return (
     <>
