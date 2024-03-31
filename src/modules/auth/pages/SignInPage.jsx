@@ -5,6 +5,7 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import { errorAlert } from "../../../config/alerts/alert";
 
 // Estilos de la página
 import '../styles/SignInPage.css'
@@ -38,6 +39,7 @@ const SignInPage = () => {
                 } else throw Error("Error")
             } catch (error) {
                 console.error(error);
+                errorAlert();
             } finally {
                 setSubmitting(false);
             }
