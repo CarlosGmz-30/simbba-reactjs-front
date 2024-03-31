@@ -75,7 +75,6 @@ const Historical = () => {
 
           <h1 className="title">Histórico del bote</h1>
           <div id="graphicsScrollContainer">
-            <h3 className="title">Este mes</h3>
             {selectedTrashcan && (
               <>
                 <GraphicCard
@@ -84,7 +83,7 @@ const Historical = () => {
                 />
                 <GraphicCard
                   serialNumber={selectedTrashcan}
-                  endpoint="currentMonthRecords"
+                  endpoint="currentDayRecords"
                 />
                 <GraphicCard
                   serialNumber={selectedTrashcan}

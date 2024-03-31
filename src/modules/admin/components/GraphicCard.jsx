@@ -6,12 +6,35 @@ import { Chart as ChartJS, defaults } from "chart.js/auto";
 
 import { Line } from "react-chartjs-2";
 
+import records from '../../../data/registros_bote.json'
+
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
 
 export default function GraphicCard({ serialNumber, endpoint }) {
     const [chartData, setChartData] = useState(null);
-    
+
+    let title = "";
+
+    switch (endpoint) {
+        case "currentMonthRecords":
+            title = "Este mes"
+
+            break;
+        case "currentDayRecords":
+            title = "Este día"
+
+            break;
+        case "currentWeekRecords":
+            title = "Últimos 7 días"
+
+            break;
+
+        default:
+            title = "Chart"
+            break;
+    }
+
 
     useEffect(() => {
         const getData = async () => {
@@ -20,15 +43,20 @@ export default function GraphicCard({ serialNumber, endpoint }) {
                     url: `/v1/record/${endpoint}/${serialNumber}`,
                     method: "GET"
                 });
+                
                 //console.log("response.data: ", response.data)
                 console.log("response: ", response);
+                
+                //const DATA = records;
                 const DATA = response.data;
+                
                 //console.log("DATA: ", DATA);
+                
                 if (DATA) {
                     setChartData({
                         labels: DATA.map(item => {
                             const date = new Date(item.dateAndTime);
-                            console.log("Fecha: ",date);
+                            console.log("Fecha: ", date);
                             console.log("Distancia: ", item.distance);
 
                             return date.toLocaleDateString('en-US', {
@@ -62,7 +90,10 @@ export default function GraphicCard({ serialNumber, endpoint }) {
     }, [serialNumber, endpoint]);
 
     return (
+
         <div className="graphicCard">
+            <h3 className="title">{title}</h3>
+
             {
                 chartData &&
 

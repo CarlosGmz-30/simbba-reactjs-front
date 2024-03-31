@@ -53,6 +53,6 @@
 
 #graphicsScrollContainer{
   overflow-y: auto;
-  max-height: 500px;
+  max-height: 280px;
   width: 100%;
 }
