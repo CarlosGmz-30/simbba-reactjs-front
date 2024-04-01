@@ -6,6 +6,7 @@ import "../assets/styles/AdminLayout.css";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import AuthContext from "../config/context/auth-context";
 import { closeAlert } from "../config/alerts/alert"
+import user from "../assets/images/usuario.png"
 
 const AdminLayout = () => {
   const { dispatch } = useContext(AuthContext);
@@ -109,7 +110,7 @@ const AdminLayout = () => {
           </header>
           <div className="profile">
             <Avatar
-              src="https://avatars.dicebear.com/api/avataaars/1.svg"
+              img={user}
               label="Profile"
               rounded
               size="xl"
