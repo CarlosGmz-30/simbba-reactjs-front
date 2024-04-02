@@ -7,6 +7,7 @@ import edit from '../../../assets/images/editar.png'
 import eliminar from '../../../assets/images/eliminar.png'
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
+import { deleteTrash } from '../../../config/alerts/alert';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 
@@ -45,7 +46,7 @@ export default function TrashCard({ name, level, serialNumber, onSelect }) {
                             <img className='trashBtn' src={edit} alt="" />
                         </button>
                         {/* Boton de eliminar */}
-                        <button>
+                        <button onClick={deleteTrash}>
                             <img className='trashBtn' src={eliminar} alt="" />
                         </button>
                     </div>

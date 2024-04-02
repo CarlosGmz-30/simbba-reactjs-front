@@ -51,5 +51,20 @@ export const errorAlert = (errorMessage, onClose) => SweetAlert.fire({
     allowOutsideClick: true,
     showConfirmButton: false,
     timer: 2000,
-    onClose 
+    onClose
+});
+
+export const deleteTrash = (preConfirm) => SweetAlert.fire({
+    title: "¿Estás seguro de borrar el bote?",
+    icon: "info",
+    confirmButtonColor: "#009475",
+    confirmButtonText: "Aceptar",
+    cancelButtonColor: "#A32D2D",
+    cancelButtonText: "Cancelar",
+    reverseButtons: true,
+    backdrop: true,
+    showCancelButton: true,
+    showLoaderOnConfirm: true,
+    allowOutsideClick: () => !SweetAlert.isLoading(),
+    preConfirm
 });
