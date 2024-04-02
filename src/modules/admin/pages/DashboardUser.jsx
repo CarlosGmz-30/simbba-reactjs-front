@@ -1,14 +1,18 @@
 import { Button, Alert, TextInput, Spinner } from "flowbite-react";
 import styled from "styled-components";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/DashboardUser.css";
 import add from "../../../assets/images/add.png";
 import borrar from "../../../assets/images/deleteBtn.png";
 import OffCanvas from "../../../components/OffCanvas";
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import AxiosClient from "../../../config/http-client/axios-client";
+import { customAlert } from "../../../config/alerts/alert";
 
 const DashboardUser = () => {
+  const [listadoUsuarios, setListadoUsuarios] = useState([]);
+
   const [estado, cambiarEstado] = useState(false);
   const [mostrarAlerta, setMostrarAlerta] = useState(false);
   const [mostrarAlertaVacios, setMostrarAlertaVacios] = useState(false);
@@ -17,14 +21,39 @@ const DashboardUser = () => {
   const formik = useFormik({
     initialValues: {
       name: "",
-      email: "",
+      mail: "",
       password: "",
     },
     validationSchema: yup.object().shape({
       name: yup.string().required("El nombre es requerido"),
-      email: yup.string().required("El correo es requerido").email("El correo no es válido"),
+      mail: yup.string().required("El correo es requerido").email("El correo no es válido"),
       password: yup.string().required("La  contraseña es requerida")
     }),
+    onSubmit: async (data, { setSubmitting }) => {
+      try {
+        const payload = {
+          ...data,
+          mail: data.mail,
+          password: data.password,
+          role: "USER"
+        };
+        const response = await AxiosClient({
+          method: 'POST',
+          url: '/user/',
+          data: payload
+        });
+        if (!response.error) {
+          mostrarAlertaGuardado()
+          getAllUsers();
+
+        }
+      } catch (error) {
+        customAlert("error", "Error al guardar el usuario")
+        console.log("Error al guardar el usuario", error);
+      } finally {
+        setSubmitting(false);
+      }
+    }
   });
 
 
@@ -48,12 +77,12 @@ const DashboardUser = () => {
   // Funcion para validar campos vacios
   const camposValidos = () => {
     const nombreInput = document.querySelector("#nombreInput").value;
-    const emailInput = document.querySelector("#emailInput").value;
+    const mailInput = document.querySelector("#mailInput").value;
     const passwordInput = document.querySelector("#passwordInput").value;
 
     if (
       nombreInput.trim() === "" ||
-      emailInput.trim() === "" ||
+      mailInput.trim() === "" ||
       passwordInput.trim() === ""
     ) {
       setMostrarAlertaVacios(true);
@@ -67,6 +96,44 @@ const DashboardUser = () => {
 
     return true;
   };
+
+  const getAllUsers = async () => {
+    try {
+      const response = await AxiosClient({
+        method: 'GET',
+        url: '/user/'
+      });
+
+      const DATA = response.data;
+      setListadoUsuarios(DATA);
+
+      console.log(DATA);
+    } catch (error) {
+      console.log("Error al obtener los usuarios", error);
+    }
+  };
+
+  const deleteUser = async (id) => {
+    try {
+      const response = await AxiosClient({
+        method: "DELETE",
+        url: `/user/${id}/`,
+      });
+      if (!response.error) {
+        customAlert("success", "Usuario eliminado correctamente")
+      } else {
+        customAlert("error", "Error al eliminar el usuario")
+      }
+    } catch (error) {
+      console.log("Error al eliminar el usuario", error);
+      
+    }
+  };
+
+
+  useEffect(() => {
+    getAllUsers();
+  }, []);
 
   return (
     <>
@@ -136,36 +203,20 @@ const DashboardUser = () => {
           <OffCanvas estado={estado} cambiarEstado={cambiarEstado}>
             <ContenedorFormulario>
               <h1>Registrar Usuario</h1>
-              <form>
-                <label htmlFor="">Nombre:</label>
-                <TextInput
-                  className="inputForm"
-                  id="nombreInput"
-                  type="text"
-                  placeholder="Nombre"
-                  name="name"
-                  value={formik.values.name}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  helperText={
-                    formik.errors.name && formik.touched.name ?
-                      (<span className="text-red-500">{formik.errors.name}</span>) : null
-                  }
-                />
-
+              <form id="userForm" name="userForm" noValidate onSubmit={formik.handleSubmit}>
                 <label htmlFor="">Correo Electrónico:</label>
                 <TextInput
                   className="inputForm"
-                  id="emailInput"
-                  type="email"
+                  id="mailInput"
+                  type="mail"
                   placeholder="Correo Electrónico"
-                  name="email"
-                  value={formik.values.email}
+                  name="mail"
+                  value={formik.values.mail}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   helperText={
-                    formik.errors.email && formik.touched.email ?
-                      (<span className="text-red-500">{formik.errors.email}</span>) : null
+                    formik.errors.mail && formik.touched.mail ?
+                      (<span className="text-red-500">{formik.errors.mail}</span>) : null
                   }
                 />
                 <label htmlFor="">Contraseña:</label>
@@ -183,25 +234,22 @@ const DashboardUser = () => {
                       (<span className="text-red-500">{formik.errors.password}</span>) : null
                   }
                 />
+                <ContenedorBoton>
+                  <button
+                    className="btnCancelar"
+                    onClick={() => {
+                      cambiarEstado(!estado);
+                      formik.resetForm();
+                    }}
+                  >
+                    Cancelar
+                  </button>
+                  <Button className="btnGuardar" type="submit" disabled={formik.isSubmitting || !formik.isValid}>
+                    {formik.isSubmitting ? (<Spinner />) : ("Guardar")}
+                  </Button>
+
+                </ContenedorBoton>
               </form>
-              <ContenedorBoton>
-                <button
-                  className="btnCancelar"
-                  onClick={() => {
-                    cambiarEstado(!estado);
-                    formik.resetForm();
-                  }}
-                >
-                  Cancelar
-                </button>
-                <Button className="btnGuardar" onClick={mostrarAlertaGuardado} type="submit" disabled={formik.isSubmitting || !formik.isValid}>
-                  {
-                    formik.isSubmitting ? (<Spinner />) : (<>
-                      Guardar
-                    </>)
-                  }
-                </Button>
-              </ContenedorBoton>
             </ContenedorFormulario>
           </OffCanvas>
         </div>
@@ -211,66 +259,21 @@ const DashboardUser = () => {
           <table id="table">
             <thead>
               <tr>
-                <th id="blueColumn">Nombre</th>
                 <th id="greenColumn">Correo Electrónico</th>
                 <th id="blueColumn">Eliminar</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Example</td>
-                <td>example@utez.edu.mx</td>
-                <td>
-                  <button>
-                    <img id="deleteBtn" src={borrar} alt="" />
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Example</td>
-                <td>example@utez.edu.mx</td>
-                <td>
-                  <button>
-                    <img id="deleteBtn" src={borrar} alt="" />
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Example</td>
-                <td>example@utez.edu.mx</td>
-                <td>
-                  <button>
-                    <img id="deleteBtn" src={borrar} alt="" />
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Example</td>
-                <td>example@utez.edu.mx</td>
-                <td>
-                  <button>
-                    <img id="deleteBtn" src={borrar} alt="" />
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Example</td>
-                <td>example@utez.edu.mx</td>
-                <td>
-                  <button>
-                    <img id="deleteBtn" src={borrar} alt="" />
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Example</td>
-                <td>example@utez.edu.mx</td>
-                <td>
-                  <button>
-                    <img id="deleteBtn" src={borrar} alt="" />
-                  </button>
-                </td>
-              </tr>
+              {listadoUsuarios && listadoUsuarios.map((usuario, index) => (
+                <tr key={usuario.id}>
+                  <td>{usuario.mail}</td>
+                  <td>
+                    <button id="deleteBtn"  onClick={() => deleteUser(usuario.id)}>
+                      <img src={borrar} alt="deleteIcon" />
+                    </button>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
