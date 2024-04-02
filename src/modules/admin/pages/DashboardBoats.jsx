@@ -209,30 +209,29 @@ const DashboardBoats = () => {
                                         (<span className="text-red-500">{formik.errors.id}</span>) : null
                                 }
                             />
+                            <ContenedorBoton>
+                                <button
+                                    className="btnCancelar"
+                                    onClick={() => {
+                                        cambiarEstado(!estado);
+                                        formik.resetForm();
+                                    }}
+                                >
+                                    Cancelar
+                                </button>
+                                <Button
+                                    className="btnGuardar"
+                                    type="submit"
+                                    disabled={!formik.isValid || formik.isSubmitting}
+                                >
+                                    {
+                                        formik.isSubmitting ? (<Spinner />) : (<>
+                                            Guardar
+                                        </>)
+                                    }
+                                </Button>
+                            </ContenedorBoton>
                         </form>
-                        <ContenedorBoton>
-                            <button
-                                className="btnCancelar"
-                                onClick={() => {
-                                    cambiarEstado(!estado);
-                                    formik.resetForm();
-                                }}
-                            >
-                                Cancelar
-                            </button>
-                            <Button
-                                className="btnGuardar"
-                                type="submit"
-                                onClick={alerta}
-                                disabled={!formik.isValid || formik.isSubmitting}
-                            >
-                                {
-                                    formik.isSubmitting ? (<Spinner />) : (<>
-                                        Guardar
-                                    </>)
-                                }
-                            </Button>
-                        </ContenedorBoton>
                     </ContenedorFormulario>
                 </OffCanvas>
             </div>
@@ -273,7 +272,7 @@ const ContenedorFormulario = styled.div`
 `;
 
 const ContenedorBoton = styled.div`
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 35px;

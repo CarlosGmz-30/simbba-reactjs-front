@@ -126,7 +126,7 @@ const DashboardUser = () => {
       }
     } catch (error) {
       console.log("Error al eliminar el usuario", error);
-      
+
     }
   };
 
@@ -219,7 +219,7 @@ const DashboardUser = () => {
                       (<span className="text-red-500">{formik.errors.mail}</span>) : null
                   }
                 />
-                <label htmlFor="">Contraseña:</label>
+                <label htmlFor="" style={{ marginTop: 30 }}>Contraseña:</label>
                 <TextInput
                   className="inputForm"
                   id="passwordInput"
@@ -244,10 +244,15 @@ const DashboardUser = () => {
                   >
                     Cancelar
                   </button>
-                  <Button className="btnGuardar" type="submit" disabled={formik.isSubmitting || !formik.isValid}>
-                    {formik.isSubmitting ? (<Spinner />) : ("Guardar")}
+                  <Button
+                    className="btnGuardar"
+                    type="submit"
+                    disabled={formik.isSubmitting || !formik.isValid}
+                  >
+                    {
+                      formik.isSubmitting ? (<Spinner />) : ("Guardar")
+                    }
                   </Button>
-
                 </ContenedorBoton>
               </form>
             </ContenedorFormulario>
@@ -268,7 +273,7 @@ const DashboardUser = () => {
                 <tr key={usuario.id}>
                   <td>{usuario.mail}</td>
                   <td>
-                    <button id="deleteBtn"  onClick={() => deleteUser(usuario.id)}>
+                    <button id="deleteBtn" onClick={() => deleteUser(usuario.id)}>
                       <img src={borrar} alt="deleteIcon" />
                     </button>
                   </td>
@@ -292,6 +297,7 @@ const ContenedorFormulario = styled.div`
   h1 {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 20px;
   }
 
   form {
@@ -314,10 +320,10 @@ const ContenedorFormulario = styled.div`
 `;
 
 const ContenedorBoton = styled.div`
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 35px;
 
   button {
     width: 45%;
