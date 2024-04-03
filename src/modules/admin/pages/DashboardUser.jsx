@@ -117,10 +117,11 @@ const DashboardUser = () => {
     try {
       const response = await AxiosClient({
         method: "DELETE",
-        url: `/user/${id}/`,
+        url: `/user/${id}`,
       });
       if (!response.error) {
         customAlert("success", "Usuario eliminado correctamente")
+        getAllUsers();
       } else {
         customAlert("error", "Error al eliminar el usuario")
       }
