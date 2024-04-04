@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { errorAlert } from "../../../config/alerts/alert";
+import Logo from '../images/logoSIMBBA-white.png'
 
 // Estilos de la página
 import '../styles/SignInPage.css'
@@ -95,7 +96,7 @@ const SignInPage = () => {
                         noValidate
                         onSubmit={formik.handleSubmit}
                     >
-                        <h1 id="title">Inicia sesión en SIBBAI</h1>
+                        <h1 id="title">Inicia sesión en SIMBBA</h1>
                         <div>
                             <div className="mb-2 block">
                                 <Label className="formLabel" htmlFor="email1" value="Correo Electrónico:" style={{ color: 'white' }} />
@@ -159,7 +160,10 @@ const SignInPage = () => {
                     </form>
                 </div>
                 <div id="logoContainer">
-                    <img id="logo" src="./src/images/logoSIMBBA-white.png" alt="" />
+                    <img
+                        id="logo"
+                        src={Logo}
+                        alt="SIMBBA" />
                 </div>
             </div>
 

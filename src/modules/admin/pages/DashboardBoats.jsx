@@ -185,15 +185,14 @@ const DashboardBoats = () => {
                         <div style={{ display: 'flex', flexDirection: 'row', height: '240px' }}>
                             <AddTrash abrirFormulario={() => cambiarEstado(true)} />
                             {trashcans && trashcans.map((trashcan, index) => (
-
                                 <TrashCard
                                     key={index}
                                     name={trashcan.trashcanName}
                                     level={trashcan.level}
                                     serialNumber={trashcan.serialNumber}
                                 />
-
                             ))}
+                            <TrashCard />
                         </div>
                     </div>
                 </section>
@@ -301,7 +300,7 @@ const ContenedorFormulario = styled.div`
 `;
 
 const ContenedorBoton = styled.div`
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 35px;
