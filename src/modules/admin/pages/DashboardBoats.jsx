@@ -11,6 +11,7 @@ import * as yup from 'yup';
 import styled from "styled-components";
 import OffCanvas from "../../../components/OffCanvas";
 import { Button, Alert, TextInput, Spinner } from "flowbite-react";
+import { confirmAlert, customAlert } from "../../../config/alerts/alert";
 
 
 const DashboardBoats = () => {
@@ -25,22 +26,48 @@ const DashboardBoats = () => {
     const formik = useFormik({
         initialValues: {
             name: "",
-            id: "",
+            serialNumber: "",
         },
         validationSchema: yup.object().shape({
             name: yup.string().required("El nombre es requerido"),
-            id: yup.string().required("La matrícula es requerida"),
+            serialNumber: yup.string().required("El número de serie es requerido"),
         }),
+        onSubmit: async (values, { setSubmtting }) => {
+            confirmAlert(async () => {
+                try {
+                    const payload = {
+                        ...values,
+                        trashcanName: values.name,
+                        serialNumber: values.serialNumber
+
+                    }
+                    const response = await AxiosClient({
+                        method: "POST",
+                        url: '/v1/trashcan/save/',
+                        data: payload
+                    })
+                    if (!response.error) {
+                        customAlert('Registro exitoso', 'El bote se ha registrado correctament', 'success')
+
+                    } else throw Error('error')
+                } catch (error) {
+                    console.log(error);
+
+                } finally {
+                    setSubmtting(false);
+                }
+            })
+        }
     });
 
     // Funcion para mostrar alertas
     const alerta = () => {
         const nombreInput = document.querySelector("#nombreInput").value;
-        const matriculaInput = document.querySelector("#matriculaInput").value;
+        const serialNumberInput = document.querySelector("#serialNumberInput").value;
 
         if (
             nombreInput.trim() === "" ||
-            matriculaInput.trim() === ""
+            serialNumberInput.trim() === ""
         ) {
             setMostrarAlertaVacios(true);
             setTimeout(() => {
@@ -173,7 +200,7 @@ const DashboardBoats = () => {
                 <OffCanvas estado={estado} cambiarEstado={cambiarEstado}>
                     <ContenedorFormulario>
                         <h1>Registrar Bote</h1>
-                        <form>
+                        <form onSubmit={formik.handleSubmit} noValidate>
                             <label htmlFor="">Nombre:</label>
                             <TextInput
                                 className="inputForm"
@@ -193,24 +220,23 @@ const DashboardBoats = () => {
                                 htmlFor=""
                                 style={{ marginTop: "35px" }}
                             >
-                                ID del Bote:
+                                Número de serie del dispositivo:
                             </label>
                             <TextInput
                                 className="inputForm"
-                                id="matriculaInput"
+                                id="serialNumberInput"
                                 type="text"
-                                placeholder="ID del Bote"
-                                name="id"
-                                value={formik.values.id}
+                                placeholder="Número de serie"
+                                name="serialNumber"
+                                value={formik.values.serialNumber}
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 helperText={
-                                    formik.errors.id && formik.touched.id ?
-                                        (<span className="text-red-500">{formik.errors.id}</span>) : null
+                                    formik.errors.serialNumber && formik.touched.serialNumber ?
+                                        (<span className="text-red-500">{formik.errors.serialNumber}</span>) : null
                                 }
                             />
-                        </form>
-                        <ContenedorBoton>
+                             <ContenedorBoton>
                             <button
                                 className="btnCancelar"
                                 onClick={() => {
@@ -223,7 +249,7 @@ const DashboardBoats = () => {
                             <Button
                                 className="btnGuardar"
                                 type="submit"
-                                onClick={alerta}
+                                // onClick={alerta}
                                 disabled={!formik.isValid || formik.isSubmitting}
                             >
                                 {
@@ -233,6 +259,8 @@ const DashboardBoats = () => {
                                 }
                             </Button>
                         </ContenedorBoton>
+                        </form>
+                       
                     </ContenedorFormulario>
                 </OffCanvas>
             </div>
