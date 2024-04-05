@@ -89,21 +89,21 @@ const DashboardBoats = () => {
                 url: "/v1/trashcan/",
                 method: "GET"
             });
-            //console.log(response);
-
             const DATA = response.data;
             setTrashcans(DATA);
+        } catch (error) {
+            console.log('Error: ', error);
+        }
+    }
 
-            console.log(DATA);
-
-            // DATA.forEach(trashcan => { 
-            //     console.log(`ID: ${trashcan.id}`);
-            //     console.log(`Serial Number: ${trashcan.serialNumber}`);
-            //     console.log(`Trashcan Name: ${trashcan.trashcanName}`);
-            //     console.log(`Level: ${trashcan.level}`);
-            // });
-
-
+    const updateTrashcans = async () => {
+        try {
+            const response = await AxiosClient({
+                url: "/v1/trashcan/",
+                method: "GET"
+            });
+            const DATA = response.data;
+            setTrashcans(DATA);
         } catch (error) {
             console.log('Error: ', error);
         }
@@ -111,7 +111,7 @@ const DashboardBoats = () => {
 
 
     useEffect(() => {
-        getAllTrashcans();
+        updateTrashcans();
     }, []);
 
     //getAllTrashcans();
@@ -190,6 +190,7 @@ const DashboardBoats = () => {
                                     name={trashcan.trashcanName}
                                     level={trashcan.level}
                                     serialNumber={trashcan.serialNumber}
+                                    updateTrashcans={updateTrashcans}
                                 />
                             ))}
                             
