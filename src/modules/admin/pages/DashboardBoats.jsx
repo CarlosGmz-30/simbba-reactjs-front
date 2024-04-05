@@ -192,7 +192,7 @@ const DashboardBoats = () => {
                                     serialNumber={trashcan.serialNumber}
                                 />
                             ))}
-                            <TrashCard />
+                            
                         </div>
                     </div>
                 </section>
