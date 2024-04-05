@@ -48,7 +48,7 @@ const DashboardBoats = () => {
                     })
                     if (!response.error) {
                         customAlert('Registro exitoso', 'El bote se ha registrado correctament', 'success')
-
+                        getAllTrashcans();
                     } else throw Error('error')
                 } catch (error) {
                     console.log(error);
