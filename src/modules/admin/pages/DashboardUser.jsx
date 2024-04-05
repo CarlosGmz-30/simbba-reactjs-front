@@ -74,12 +74,10 @@ const DashboardUser = () => {
 
   // Funcion para validar campos vacios
   const camposValidos = () => {
-    const nombreInput = document.querySelector("#nombreInput").value;
     const mailInput = document.querySelector("#mailInput").value;
     const passwordInput = document.querySelector("#passwordInput").value;
 
     if (
-      nombreInput.trim() === "" ||
       mailInput.trim() === "" ||
       passwordInput.trim() === ""
     ) {

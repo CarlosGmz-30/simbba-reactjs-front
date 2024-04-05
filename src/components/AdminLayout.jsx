@@ -6,10 +6,11 @@ import "../assets/styles/AdminLayout.css";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import AuthContext from "../config/context/auth-context";
 import { closeAlert } from "../config/alerts/alert"
-import user from "../assets/images/usuario.png"
+import userImg from "../assets/images/usuario.png"
 
 const AdminLayout = () => {
   const { dispatch } = useContext(AuthContext);
+  const { user } = useContext(AuthContext); // Obtén el objeto de usuario del contexto de autenticación
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -19,6 +20,7 @@ const AdminLayout = () => {
     });
   };
 
+  console.log(user.user.mail);
 
   return (
     <>
@@ -110,7 +112,7 @@ const AdminLayout = () => {
           </header>
           <div className="profile">
             <Avatar
-              img={user}
+              img={userImg}
               label="Profile"
               rounded
               size="xl"
@@ -128,7 +130,7 @@ const AdminLayout = () => {
                 <Label
                   className="info"
                   htmlFor="email1"
-                  value="admin@utez.edu.mx"
+                  value={user.user.mail}
                   style={{ color: "white" }}
                 />
               </div>
