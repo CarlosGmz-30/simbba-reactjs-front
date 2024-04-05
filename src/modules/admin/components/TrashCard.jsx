@@ -10,27 +10,64 @@ import styled from 'styled-components';
 import { deleteTrash } from '../../../config/alerts/alert';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-
+import AxiosClient from '../../../config/http-client/axios-client'
+import { Spinner } from 'flowbite-react';
 export default function TrashCard({ name, level, serialNumber, onSelect }) {
 
     // Esto es para el boton de actualizar
     const [isUpdate, setIsUpdate] = useState(false);
+
+    // Esto es para el boton de eliminar
+    const [isDelete, setIsDelete] = useState(false);
 
     // Esto es para el boton de actualizar
     const handleUpdateClick = () => {
         setIsUpdate(true);
     }
 
+    const handleUpdateSubmit = (values, { setSubmitting }) => {
+        AxiosClient.put(`/v1/trashcan/update/`, values)
+            .then(() => {
+                console.log('Trashcan updated');
+                setIsUpdate(false);
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+            .finally(() => {
+                setSubmitting(false);
+            });
+    }
+
+    // Esto es para el boton de eliminar
+    // endpoint /v1/trashcan/delete/:serialNumber
+    const handleDeleteClick = () => {
+        isDelete ? setIsDelete(false) : setIsDelete(true);
+        deleteTrash(() => {
+            AxiosClient.delete(`/v1/trashcan/delete/${serialNumber}`)
+                .then(() => {
+                    console.log('Bote eliminado')
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
+        });
+        
+
+    }
+
     // Validaciones con Formik
     const formik = useFormik({
         initialValues: {
-            name: "",
-            id: "",
+            trashcanName: "",
+            serialNumber: "",
         },
         validationSchema: yup.object().shape({
-            name: yup.string().required("El nombre es requerido"),
-            id: yup.string().required("La matrícula es requerida"),
+            trashcanName: yup.string().required("El nombre es requerido"),
+            serialNumber: yup.string().required("La matrícula es requerida"),
         }),
+        onSubmit: handleUpdateSubmit,
+
     });
 
 
@@ -38,8 +75,6 @@ export default function TrashCard({ name, level, serialNumber, onSelect }) {
         event.preventDefault();
         onSelect(serialNumber);
     }
-
-
 
     let capacity = '';
     if (level == 0) {
@@ -61,7 +96,7 @@ export default function TrashCard({ name, level, serialNumber, onSelect }) {
                             <img className='trashBtn' src={edit} alt="" />
                         </button>
                         {/* Boton de eliminar */}
-                        <button onClick={deleteTrash}>
+                        <button onClick={handleDeleteClick}>
                             <img className='trashBtn' src={eliminar} alt="" />
                         </button>
                     </div>
@@ -86,13 +121,13 @@ export default function TrashCard({ name, level, serialNumber, onSelect }) {
                                 id="nombreInput"
                                 type="text"
                                 placeholder="Nombre"
-                                name="name"
-                                value={formik.values.name}
+                                name="trashcanName"
+                                value={formik.values.trashcanName}
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 helperText={
-                                    formik.errors.name && formik.touched.name ?
-                                        (<span className="text-red-500">{formik.errors.name}</span>) : null
+                                    formik.errors.name && formik.touched.trashcanName ?
+                                        (<span className="text-red-500">{formik.errors.trashcanName}</span>) : null
                                 }
                             />
                             <label htmlFor=""
@@ -105,13 +140,13 @@ export default function TrashCard({ name, level, serialNumber, onSelect }) {
                                 id="matriculaInput"
                                 type="text"
                                 placeholder="ID del Bote"
-                                name="id"
-                                value={formik.values.id}
+                                name="serialNumber"
+                                value={formik.values.serialNumber}
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 helperText={
-                                    formik.errors.id && formik.touched.id ?
-                                        (<span className="text-red-500">{formik.errors.id}</span>) : null
+                                    formik.errors.serialNumber && formik.touched.serialNumber ?
+                                        (<span className="text-red-500">{formik.errors.serialNumber}</span>) : null
                                 }
                             />
                             <ContenedorBoton>
@@ -126,7 +161,8 @@ export default function TrashCard({ name, level, serialNumber, onSelect }) {
                                 </button>
                                 <Button
                                     className="btnGuardar"
-                                    type="submit"
+                                    //type="submit"
+                                    onClick={formik.handleSubmit}
                                     disabled={!formik.isValid || formik.isSubmitting}
                                 >
                                     {

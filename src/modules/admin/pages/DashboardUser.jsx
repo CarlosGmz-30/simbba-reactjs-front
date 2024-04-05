@@ -20,12 +20,10 @@ const DashboardUser = () => {
   // Validaciones con Formik
   const formik = useFormik({
     initialValues: {
-      name: "",
       mail: "",
       password: "",
     },
     validationSchema: yup.object().shape({
-      name: yup.string().required("El nombre es requerido"),
       mail: yup.string().required("El correo es requerido").email("El correo no es válido"),
       password: yup.string().required("La  contraseña es requerida")
     }),
