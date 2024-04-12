@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import React from 'react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import credentials from '../../../assets/credentials';
 
-const Map = () => {
-    const [scriptLoaded, setScriptLoaded] = useState(false);
+const Map = ({markers}) => {
     const mapContainerStyle = {
         width: '100%',
         height: '100%'
@@ -17,13 +16,18 @@ const Map = () => {
     return (
         <LoadScript
             googleMapsApiKey={credentials.mapsKey}
-            onLoad={() => setScriptLoaded(true)}
         >
             <GoogleMap
                 mapContainerStyle={mapContainerStyle}
                 center={center}
-                zoom={18}
-            />
+                zoom={17}
+            >
+                {markers.map(marker => (
+                    <Marker 
+                    key={marker.id} 
+                    position={marker.position} />
+                    ))}
+            </GoogleMap>
         </LoadScript>
     );
 };

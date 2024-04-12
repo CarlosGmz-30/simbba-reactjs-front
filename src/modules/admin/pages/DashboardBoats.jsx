@@ -1,11 +1,11 @@
 import "../styles/DashboardBoats.css";
-import Map from '../components/Map';
-import AddTrash from '../components/AddTrash';
-import TrashCard from '../components/TrashCard';
-import AxiosClient from '../../../config/http-client/axios-client';
-import React, { useState, useEffect } from 'react';
-import { useFormik } from 'formik';
-import * as yup from 'yup';
+import Map from "../components/Map";
+import AddTrash from "../components/AddTrash";
+import TrashCard from "../components/TrashCard";
+import AxiosClient from "../../../config/http-client/axios-client";
+import React, { useState, useEffect } from "react";
+import { useFormik } from "formik";
+import * as yup from "yup";
 
 // Importaciones para el OffCanvas
 import styled from "styled-components";
@@ -13,262 +13,289 @@ import OffCanvas from "../../../components/OffCanvas";
 import { Button, Alert, TextInput, Spinner } from "flowbite-react";
 import { confirmAlert, customAlert } from "../../../config/alerts/alert";
 
-
 const DashboardBoats = () => {
-    const [trashcans, setTrashcans] = useState([]);
+  const [markers, setMarkers] = useState([]);
+  const [trashcans, setTrashcans] = useState([]);
 
-    // Alertas
-    const [mostrarAlerta, setMostrarAlerta] = useState(false);
-    const [mostrarAlertaVacios, setMostrarAlertaVacios] = useState(false);
-    const [estado, cambiarEstado] = useState(false);
+  // Alertas
+  const [mostrarAlerta, setMostrarAlerta] = useState(false);
+  const [mostrarAlertaVacios, setMostrarAlertaVacios] = useState(false);
+  const [estado, cambiarEstado] = useState(false);
 
-    // Validaciones con Formik
-    const formik = useFormik({
-        initialValues: {
-            name: "",
-            serialNumber: "",
-        },
-        validationSchema: yup.object().shape({
-            name: yup.string().required("El nombre es requerido"),
-            serialNumber: yup.string().required("El número de serie es requerido"),
-        }),
-        onSubmit: async (values, { setSubmtting }) => {
-            confirmAlert(async () => {
-                try {
-                    const payload = {
-                        ...values,
-                        trashcanName: values.name,
-                        serialNumber: values.serialNumber
-
-                    }
-                    const response = await AxiosClient({
-                        method: "POST",
-                        url: '/v1/trashcan/save/',
-                        data: payload
-                    })
-                    if (!response.error) {
-                        customAlert('Registro exitoso', 'El bote se ha registrado correctament', 'success')
-                        getAllTrashcans();
-                    } else throw Error('error')
-                } catch (error) {
-                    console.log(error);
-
-                } finally {
-                    setSubmtting(false);
-                }
-            })
+  // Validaciones con Formik
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      serialNumber: "",
+    },
+    validationSchema: yup.object().shape({
+      name: yup.string().required("El nombre es requerido"),
+      serialNumber: yup.string().required("El número de serie es requerido"),
+    }),
+    onSubmit: async (values, { setSubmtting }) => {
+      confirmAlert(async () => {
+        try {
+          const payload = {
+            ...values,
+            trashcanName: values.name,
+            serialNumber: values.serialNumber,
+          };
+          const response = await AxiosClient({
+            method: "POST",
+            url: "/v1/trashcan/save/",
+            data: payload,
+          });
+          if (!response.error) {
+            customAlert(
+              "Registro exitoso",
+              "El bote se ha registrado correctament",
+              "success"
+            );
+            getAllTrashcans();
+          } else throw Error("error");
+        } catch (error) {
+          console.log(error);
+        } finally {
+          setSubmtting(false);
         }
-    });
+      });
+    },
+  });
 
-    // Funcion para mostrar alertas
-    const alerta = () => {
-        const nombreInput = document.querySelector("#nombreInput").value;
-        const serialNumberInput = document.querySelector("#serialNumberInput").value;
+  // Funcion para mostrar alertas
+  const alerta = () => {
+    const nombreInput = document.querySelector("#nombreInput").value;
+    const serialNumberInput =
+      document.querySelector("#serialNumberInput").value;
 
-        if (
-            nombreInput.trim() === "" ||
-            serialNumberInput.trim() === ""
-        ) {
-            setMostrarAlertaVacios(true);
-            setTimeout(() => {
-                setMostrarAlertaVacios(false);
-            }, 3000);
+    if (nombreInput.trim() === "" || serialNumberInput.trim() === "") {
+      setMostrarAlertaVacios(true);
+      setTimeout(() => {
+        setMostrarAlertaVacios(false);
+      }, 3000);
+    } else {
+      setMostrarAlerta(true);
+      cambiarEstado(!estado);
+      formik.resetForm();
+      setTimeout(() => {
+        setMostrarAlerta(false);
+      }, 3000);
+    }
+  };
+
+  const getAllTrashcans = async () => {
+    try {
+      const response = await AxiosClient({
+        url: "/v1/trashcan/",
+        method: "GET",
+      });
+      const DATA = response.data;
+      setTrashcans(DATA);
+    } catch (error) {
+      console.log("Error: ", error);
+    }
+  };
+
+  const updateTrashcans = async () => {
+    try {
+      const response = await AxiosClient({
+        url: "/v1/trashcan/",
+        method: "GET",
+      });
+      const DATA = response.data;
+      setTrashcans(DATA);
+    } catch (error) {
+      console.log("Error: ", error);
+    }
+  };
+
+  const fetchLocations = async () => {
+    try {
+      const response = await AxiosClient({
+        url: "/v1/record/lastLocations",
+        method: "GET",
+      });
+      if (response.status === 'OK') {
+        if (Object.keys(locations).length > 0) {
+          const markersArray = Object.keys(locations).map((key) => ({
+            id: key,
+            position: {
+              lat: parseFloat(locations[key].latitude),
+              lng: parseFloat(locations[key].longitude),
+            },
+          }));
+          setMarkers(markersArray);
+          console.log(markersArray);
         } else {
-            setMostrarAlerta(true);
-            cambiarEstado(!estado);
-            formik.resetForm();
-            setTimeout(() => {
-                setMostrarAlerta(false);
-            }, 3000);
+          console.log("No hay datos de ubicación disponibles");
         }
+      } else {
+        console.log("Error en la solicitud: ", response.status);
+      }
+    } catch (error) {
+      console.log("Error: ", error);
     }
+  };
 
-    const getAllTrashcans = async () => {
-        try {
-            const response = await AxiosClient({
-                url: "/v1/trashcan/",
-                method: "GET"
-            });
-            const DATA = response.data;
-            setTrashcans(DATA);
-        } catch (error) {
-            console.log('Error: ', error);
-        }
-    }
+  useEffect(() => {
+    updateTrashcans();
+  }, []);
 
-    const updateTrashcans = async () => {
-        try {
-            const response = await AxiosClient({
-                url: "/v1/trashcan/",
-                method: "GET"
-            });
-            const DATA = response.data;
-            setTrashcans(DATA);
-        } catch (error) {
-            console.log('Error: ', error);
-        }
-    }
+  useEffect(() => {
+    fetchLocations();
+  }, []);
 
+  return (
+    <>
+      {/* Alert de confirmacion de insert de datos */}
+      {mostrarAlerta && (
+        <Alert
+          color="success"
+          onDismiss={() => setMostrarAlerta(false)}
+          style={{
+            position: "fixed",
+            zIndex: 100,
+            bottom: "6%",
+            left: "50%",
+            padding: "20px",
+          }}
+        >
+          <span
+            className="font-medium"
+            style={{
+              fontSize: "16px",
+              fontWeight: "bold",
+              marginRight: "10px",
+            }}
+          >
+            ¡Datos guardados correctamente!
+          </span>
+        </Alert>
+      )}
 
-    useEffect(() => {
-        updateTrashcans();
-    }, []);
+      {/* Alert inserte datos validos */}
+      {mostrarAlertaVacios && (
+        <Alert
+          color="danger"
+          onDismiss={() => setMostrarAlertaVacios(false)}
+          style={{
+            position: "fixed",
+            zIndex: 10000,
+            top: "5%",
+            left: "38%",
+            padding: "20px",
+            backgroundColor: "rgba(255, 210, 210)",
+          }}
+        >
+          <span
+            className="font-medium"
+            style={{
+              fontSize: "16px",
+              fontWeight: "bold",
+              marginRight: "10px",
+            }}
+          >
+            ¡Por favor, completa todos los campos!
+          </span>
+        </Alert>
+      )}
 
-    //getAllTrashcans();
-
-    return (
-        <>
-            {/* Alert de confirmacion de insert de datos */}
-            {mostrarAlerta && (
-                <Alert
-                    color="success"
-                    onDismiss={() => setMostrarAlerta(false)}
-                    style={{
-                        position: "fixed",
-                        zIndex: 100,
-                        bottom: "6%",
-                        left: "50%",
-                        padding: "20px",
-                    }}
-                >
-                    <span
-                        className="font-medium"
-                        style={{
-                            fontSize: "16px",
-                            fontWeight: "bold",
-                            marginRight: "10px",
-                        }}
-                    >
-                        ¡Datos guardados correctamente!
-                    </span>
-                </Alert>
-            )}
-
-            {/* Alert inserte datos validos */}
-            {mostrarAlertaVacios && (
-                <Alert
-                    color="danger"
-                    onDismiss={() => setMostrarAlertaVacios(false)}
-                    style={{
-                        position: "fixed",
-                        zIndex: 10000,
-                        top: "5%",
-                        left: "38%",
-                        padding: "20px",
-                        backgroundColor: "rgba(255, 210, 210)",
-                    }}
-                >
-                    <span
-                        className="font-medium"
-                        style={{
-                            fontSize: "16px",
-                            fontWeight: "bold",
-                            marginRight: "10px",
-                        }}
-                    >
-                        ¡Por favor, completa todos los campos!
-                    </span>
-                </Alert>
-            )}
-
-            {/* Contenedor general */}
-            <div id="generalContainerB">
-                <div id="HeaderB">
-                    <h1 id="headerTitleB">Ubicación de los botes de basura</h1>
-                </div>
-                <section id="sectionGeneralB">
-                    <div id="mapContainerB">
-                        <Map />
-                    </div>
-                    <div id="cardsContainerB">
-                        <h1 className="titleB">Botes de Basura Disponibles</h1>
-                        <div style={{ display: 'flex', flexDirection: 'row', height: '240px' }}>
-                            <AddTrash abrirFormulario={() => cambiarEstado(true)} />
-                            {trashcans && trashcans.map((trashcan, index) => (
-                                <TrashCard
-                                    key={index}
-                                    name={trashcan.trashcanName}
-                                    level={trashcan.level}
-                                    serialNumber={trashcan.serialNumber}
-                                    updateTrashcans={updateTrashcans}
-                                />
-                            ))}
-                            
-                        </div>
-                    </div>
-                </section>
-                <OffCanvas estado={estado} cambiarEstado={cambiarEstado}>
-                    <ContenedorFormulario>
-                        <h1>Registrar Bote</h1>
-                        <form onSubmit={formik.handleSubmit} noValidate>
-                            <label htmlFor="">Nombre:</label>
-                            <TextInput
-                                className="inputForm"
-                                id="nombreInput"
-                                type="text"
-                                placeholder="Nombre"
-                                name="name"
-                                value={formik.values.name}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                helperText={
-                                    formik.errors.name && formik.touched.name ?
-                                        (<span className="text-red-500">{formik.errors.name}</span>) : null
-                                }
-                            />
-                            <label
-                                htmlFor=""
-                                style={{ marginTop: "35px" }}
-                            >
-                                Número de serie del dispositivo:
-                            </label>
-                            <TextInput
-                                className="inputForm"
-                                id="serialNumberInput"
-                                type="text"
-                                placeholder="Número de serie"
-                                name="serialNumber"
-                                value={formik.values.serialNumber}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                helperText={
-                                    formik.errors.serialNumber && formik.touched.serialNumber ?
-                                        (<span className="text-red-500">{formik.errors.serialNumber}</span>) : null
-                                }
-                            />
-                             <ContenedorBoton>
-                            <button
-                                className="btnCancelar"
-                                onClick={() => {
-                                    cambiarEstado(!estado);
-                                    formik.resetForm();
-                                }}
-                            >
-                                Cancelar
-                            </button>
-                            <Button
-                                className="btnGuardar"
-                                type="submit"
-                                // onClick={alerta}
-                                disabled={!formik.isValid || formik.isSubmitting}
-                            >
-                                {
-                                    formik.isSubmitting ? (<Spinner />) : (<>
-                                        Guardar
-                                    </>)
-                                }
-                            </Button>
-                        </ContenedorBoton>
-                        </form>
-                       
-                    </ContenedorFormulario>
-                </OffCanvas>
+      {/* Contenedor general */}
+      <div id="generalContainerB">
+        <div id="HeaderB">
+          <h1 id="headerTitleB">Ubicación de los botes de basura</h1>
+        </div>
+        <section id="sectionGeneralB">
+          <div id="mapContainerB">
+            <Map markers={markers} />
+          </div>
+          <div id="cardsContainerB">
+            <h1 className="titleB">Botes de Basura Disponibles</h1>
+            <div
+              style={{ display: "flex", flexDirection: "row", height: "240px" }}
+            >
+              <AddTrash abrirFormulario={() => cambiarEstado(true)} />
+              {trashcans &&
+                trashcans.map((trashcan, index) => (
+                  <TrashCard
+                    key={index}
+                    name={trashcan.trashcanName}
+                    level={trashcan.level}
+                    serialNumber={trashcan.serialNumber}
+                    updateTrashcans={updateTrashcans}
+                  />
+                ))}
             </div>
-        </>
-    )
-}
+          </div>
+        </section>
+        <OffCanvas estado={estado} cambiarEstado={cambiarEstado}>
+          <ContenedorFormulario>
+            <h1>Registrar Bote</h1>
+            <form onSubmit={formik.handleSubmit} noValidate>
+              <label htmlFor="">Nombre:</label>
+              <TextInput
+                className="inputForm"
+                id="nombreInput"
+                type="text"
+                placeholder="Nombre"
+                name="name"
+                value={formik.values.name}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                helperText={
+                  formik.errors.name && formik.touched.name ? (
+                    <span className="text-red-500">{formik.errors.name}</span>
+                  ) : null
+                }
+              />
+              <label htmlFor="" style={{ marginTop: "35px" }}>
+                Número de serie del dispositivo:
+              </label>
+              <TextInput
+                className="inputForm"
+                id="serialNumberInput"
+                type="text"
+                placeholder="Número de serie"
+                name="serialNumber"
+                value={formik.values.serialNumber}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                helperText={
+                  formik.errors.serialNumber && formik.touched.serialNumber ? (
+                    <span className="text-red-500">
+                      {formik.errors.serialNumber}
+                    </span>
+                  ) : null
+                }
+              />
+              <ContenedorBoton>
+                <button
+                  className="btnCancelar"
+                  onClick={() => {
+                    cambiarEstado(!estado);
+                    formik.resetForm();
+                  }}
+                >
+                  Cancelar
+                </button>
+                <Button
+                  className="btnGuardar"
+                  type="submit"
+                  // onClick={alerta}
+                  disabled={!formik.isValid || formik.isSubmitting}
+                >
+                  {formik.isSubmitting ? <Spinner /> : <>Guardar</>}
+                </Button>
+              </ContenedorBoton>
+            </form>
+          </ContenedorFormulario>
+        </OffCanvas>
+      </div>
+    </>
+  );
+};
 
-export default DashboardBoats
+export default DashboardBoats;
 
 const ContenedorFormulario = styled.div`
   display: flex;
